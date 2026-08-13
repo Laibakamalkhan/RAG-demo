@@ -1,0 +1,4482 @@
+{
+  "data_provenance_note": "original = real Shopify API fields; derived = calculated from original; synthetic = fabricated test data (product/review/support_ticket) for MVP RAG testing only, NOT real business data; rag_document/metadata = generated for embedding pipeline",
+  "records": [
+    {
+      "order_id": "gid://shopify/Order/6740608951738",
+      "order_name": "#1030",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-01-01T20:05:22Z",
+        "amount": "1337.04",
+        "currency": "CAD",
+        "customer_name": "Michael Wilson",
+        "customer_email": "michael.wilson304@example.com"
+      },
+      "derived": {
+        "amount_usd": 989.41,
+        "order_month": "2026-01",
+        "order_weekday": "Thursday",
+        "is_guest_checkout": false,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "EverWarm Fleece Jacket - Men's",
+          "category": "Apparel",
+          "description": "Mid-weight fleece jacket with zip pockets, ideal for cool weather layering."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Exceeded my expectations, arrived quickly and works perfectly."
+        },
+        "support_ticket": null
+      },
+      "rag_document": "Order #1030 placed on Jan 01, 2026 (Thursday) by Michael Wilson for CAD 1337.04 (~$989.41 USD). Product: EverWarm Fleece Jacket - Men's, a mid-weight fleece jacket with zip pockets, ideal for cool weather layering. Customer review (5/5 stars): Exceeded my expectations, arrived quickly and works perfectly.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6740608951738",
+        "customer_id": "gid://shopify/Customer/7206823277527",
+        "category": "Apparel",
+        "order_month": "2026-01",
+        "currency": "CAD",
+        "has_review": true,
+        "has_support_ticket": false,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6722414752007",
+      "order_name": "#1062",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-01-03T03:40:53Z",
+        "amount": "3895.43",
+        "currency": "USD",
+        "customer_name": "Michael Wilson",
+        "customer_email": "michael.wilson256@example.com"
+      },
+      "derived": {
+        "amount_usd": 3895.43,
+        "order_month": "2026-01",
+        "order_weekday": "Saturday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "ClassicFit Denim Jeans - Women's",
+          "category": "Apparel",
+          "description": "Straight-leg denim jean with reinforced stitching."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Great quality for the price, would buy again."
+        },
+        "support_ticket": {
+          "subject": "General order status check",
+          "text": "Customer asked for an update on order #1062; confirmed shipped with tracking number provided."
+        }
+      },
+      "rag_document": "Order #1062 placed on Jan 03, 2026 (Saturday) by Michael Wilson for USD 3895.43 (~$3895.43 USD). Product: ClassicFit Denim Jeans - Women's, a straight-leg denim jean with reinforced stitching. Customer review (5/5 stars): Great quality for the price, would buy again. Support inquiry (General order status check): Customer asked for an update on order #1062; confirmed shipped with tracking number provided.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6722414752007",
+        "customer_id": "gid://shopify/Customer/7610101042340",
+        "category": "Apparel",
+        "order_month": "2026-01",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6780132807570",
+      "order_name": "#1034",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-01-16T10:25:08Z",
+        "amount": "423.69",
+        "currency": "EUR",
+        "customer_name": "Maria Raza",
+        "customer_email": "maria.raza734@example.com"
+      },
+      "derived": {
+        "amount_usd": 461.82,
+        "order_month": "2026-01",
+        "order_weekday": "Friday",
+        "is_guest_checkout": false,
+        "order_value_tier": "low"
+      },
+      "synthetic": {
+        "product": {
+          "name": "ComfortStep Slip-Ons - Unisex",
+          "category": "Footwear",
+          "description": "Casual slip-on shoe with memory foam insole for all-day comfort."
+        },
+        "review": {
+          "rating": 3,
+          "text": "Solid purchase, only complaint is the color looked different online."
+        },
+        "support_ticket": {
+          "subject": "Product defect report",
+          "text": "Customer reported a defect with the item in order #1034; replacement unit shipped free of charge."
+        }
+      },
+      "rag_document": "Order #1034 placed on Jan 16, 2026 (Friday) by Maria Raza for EUR 423.69 (~$461.82 USD). Product: ComfortStep Slip-Ons - Unisex, a casual slip-on shoe with memory foam insole for all-day comfort. Customer review (3/5 stars): Solid purchase, only complaint is the color looked different online. Support inquiry (Product defect report): Customer reported a defect with the item in order #1034; replacement unit shipped free of charge.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6780132807570",
+        "customer_id": "gid://shopify/Customer/7735316694200",
+        "category": "Footwear",
+        "order_month": "2026-01",
+        "currency": "EUR",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 3
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6781691910134",
+      "order_name": "#1074",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-01-16T15:13:58Z",
+        "amount": "4748.81",
+        "currency": "USD",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 4748.81,
+        "order_month": "2026-01",
+        "order_weekday": "Friday",
+        "is_guest_checkout": true,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "GlowFresh Vitamin C Serum - Unisex",
+          "category": "Beauty & Personal Care",
+          "description": "Brightening facial serum with 15% vitamin C and hyaluronic acid."
+        },
+        "review": {
+          "rating": 3,
+          "text": "Decent quality, though I expected slightly better durability."
+        },
+        "support_ticket": {
+          "subject": "Wrong size received",
+          "text": "Customer reported receiving the wrong size for order #1074; replacement was issued."
+        }
+      },
+      "rag_document": "Order #1074 placed on Jan 16, 2026 (Friday) by Guest Customer for USD 4748.81 (~$4748.81 USD). Product: GlowFresh Vitamin C Serum - Unisex, a brightening facial serum with 15% vitamin c and hyaluronic acid. Customer review (3/5 stars): Decent quality, though I expected slightly better durability. Support inquiry (Wrong size received): Customer reported receiving the wrong size for order #1074; replacement was issued.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6781691910134",
+        "customer_id": null,
+        "category": "Beauty & Personal Care",
+        "order_month": "2026-01",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 3
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6751973405392",
+      "order_name": "#1007",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-01-18T19:06:51Z",
+        "amount": "1151.07",
+        "currency": "GBP",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 1461.86,
+        "order_month": "2026-01",
+        "order_weekday": "Sunday",
+        "is_guest_checkout": true,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "EverWarm Fleece Jacket - Women's",
+          "category": "Apparel",
+          "description": "Mid-weight fleece jacket with zip pockets, ideal for cool weather layering."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Really happy with this purchase, exactly as described."
+        },
+        "support_ticket": {
+          "subject": "Delayed delivery inquiry",
+          "text": "Customer asked why order #1007 hadn't shipped after 7 days; resolved after tracking update was shared."
+        }
+      },
+      "rag_document": "Order #1007 placed on Jan 18, 2026 (Sunday) by Guest Customer for GBP 1151.07 (~$1461.86 USD). Product: EverWarm Fleece Jacket - Women's, a mid-weight fleece jacket with zip pockets, ideal for cool weather layering. Customer review (5/5 stars): Really happy with this purchase, exactly as described. Support inquiry (Delayed delivery inquiry): Customer asked why order #1007 hadn't shipped after 7 days; resolved after tracking update was shared.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6751973405392",
+        "customer_id": null,
+        "category": "Apparel",
+        "order_month": "2026-01",
+        "currency": "GBP",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6758757219412",
+      "order_name": "#1013",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-01-19T07:09:23Z",
+        "amount": "776.91",
+        "currency": "USD",
+        "customer_name": "David Iqbal",
+        "customer_email": "david.iqbal258@example.com"
+      },
+      "derived": {
+        "amount_usd": 776.91,
+        "order_month": "2026-01",
+        "order_weekday": "Monday",
+        "is_guest_checkout": false,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "StrategyMind Board Game",
+          "category": "Toys & Games",
+          "description": "Family strategy board game for 2-6 players."
+        },
+        "review": {
+          "rating": 1,
+          "text": "Poor stitching quality, would not recommend."
+        },
+        "support_ticket": {
+          "subject": "Refund request",
+          "text": "Customer requested a refund for order #1013 due to change of mind; refund processed within policy window."
+        }
+      },
+      "rag_document": "Order #1013 placed on Jan 19, 2026 (Monday) by David Iqbal for USD 776.91 (~$776.91 USD). Product: StrategyMind Board Game, a family strategy board game for 2-6 players. Customer review (1/5 stars): Poor stitching quality, would not recommend. Support inquiry (Refund request): Customer requested a refund for order #1013 due to change of mind; refund processed within policy window.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6758757219412",
+        "customer_id": "gid://shopify/Customer/7581830843906",
+        "category": "Toys & Games",
+        "order_month": "2026-01",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 1
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6721234703205",
+      "order_name": "#1090",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-01-22T04:13:09Z",
+        "amount": "1471.30",
+        "currency": "EUR",
+        "customer_name": "Fatima Smith",
+        "customer_email": "fatima.smith588@example.com"
+      },
+      "derived": {
+        "amount_usd": 1603.72,
+        "order_month": "2026-01",
+        "order_weekday": "Thursday",
+        "is_guest_checkout": false,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "HydroFlow Water Bottle - Unisex",
+          "category": "Outdoor & Sports",
+          "description": "Insulated 32oz water bottle, keeps drinks cold for 24 hours."
+        },
+        "review": {
+          "rating": 3,
+          "text": "Good product overall but sizing/fit ran differently than expected."
+        },
+        "support_ticket": {
+          "subject": "Refund request",
+          "text": "Customer requested a refund for order #1090 due to change of mind; refund processed within policy window."
+        }
+      },
+      "rag_document": "Order #1090 placed on Jan 22, 2026 (Thursday) by Fatima Smith for EUR 1471.30 (~$1603.72 USD). Product: HydroFlow Water Bottle - Unisex, a insulated 32oz water bottle, keeps drinks cold for 24 hours. Customer review (3/5 stars): Good product overall but sizing/fit ran differently than expected. Support inquiry (Refund request): Customer requested a refund for order #1090 due to change of mind; refund processed within policy window.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6721234703205",
+        "customer_id": "gid://shopify/Customer/7016633204627",
+        "category": "Outdoor & Sports",
+        "order_month": "2026-01",
+        "currency": "EUR",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 3
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6746407318350",
+      "order_name": "#1010",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-01-22T17:22:46Z",
+        "amount": "4111.69",
+        "currency": "USD",
+        "customer_name": "Sara Johnson",
+        "customer_email": "sara.johnson736@example.com"
+      },
+      "derived": {
+        "amount_usd": 4111.69,
+        "order_month": "2026-01",
+        "order_weekday": "Thursday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "BrewMaster Pour-Over Kettle - Women's",
+          "category": "Home & Kitchen",
+          "description": "Gooseneck stainless steel kettle for precision pour-over coffee."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Really happy with this purchase, exactly as described."
+        },
+        "support_ticket": {
+          "subject": "Refund request",
+          "text": "Customer requested a refund for order #1010 due to change of mind; refund processed within policy window."
+        }
+      },
+      "rag_document": "Order #1010 placed on Jan 22, 2026 (Thursday) by Sara Johnson for USD 4111.69 (~$4111.69 USD). Product: BrewMaster Pour-Over Kettle - Women's, a gooseneck stainless steel kettle for precision pour-over coffee. Customer review (5/5 stars): Really happy with this purchase, exactly as described. Support inquiry (Refund request): Customer requested a refund for order #1010 due to change of mind; refund processed within policy window.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6746407318350",
+        "customer_id": "gid://shopify/Customer/7964508694078",
+        "category": "Home & Kitchen",
+        "order_month": "2026-01",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6730534077991",
+      "order_name": "#1026",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-01-24T12:57:03Z",
+        "amount": "3645.14",
+        "currency": "CAD",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 2697.4,
+        "order_month": "2026-01",
+        "order_weekday": "Saturday",
+        "is_guest_checkout": true,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "PureClay Face Mask",
+          "category": "Beauty & Personal Care",
+          "description": "Detoxifying clay mask for oily and combination skin."
+        },
+        "review": {
+          "rating": 4,
+          "text": "Exceeded my expectations, arrived quickly and works perfectly."
+        },
+        "support_ticket": {
+          "subject": "Wrong size received",
+          "text": "Customer reported receiving the wrong size for order #1026; replacement was issued."
+        }
+      },
+      "rag_document": "Order #1026 placed on Jan 24, 2026 (Saturday) by Guest Customer for CAD 3645.14 (~$2697.40 USD). Product: PureClay Face Mask, a detoxifying clay mask for oily and combination skin. Customer review (4/5 stars): Exceeded my expectations, arrived quickly and works perfectly. Support inquiry (Wrong size received): Customer reported receiving the wrong size for order #1026; replacement was issued.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6730534077991",
+        "customer_id": null,
+        "category": "Beauty & Personal Care",
+        "order_month": "2026-01",
+        "currency": "CAD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 4
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6732443845891",
+      "order_name": "#1021",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-01-25T20:45:52Z",
+        "amount": "119.86",
+        "currency": "USD",
+        "customer_name": "Ali Smith",
+        "customer_email": "ali.smith61@example.com"
+      },
+      "derived": {
+        "amount_usd": 119.86,
+        "order_month": "2026-01",
+        "order_weekday": "Sunday",
+        "is_guest_checkout": false,
+        "order_value_tier": "low"
+      },
+      "synthetic": {
+        "product": {
+          "name": "PuzzleMaster 1000pc - Men's",
+          "category": "Toys & Games",
+          "description": "1000-piece landscape jigsaw puzzle."
+        },
+        "review": {
+          "rating": 1,
+          "text": "Item didn't match the product photos, quite underwhelming."
+        },
+        "support_ticket": {
+          "subject": "Refund request",
+          "text": "Customer requested a refund for order #1021 due to change of mind; refund processed within policy window."
+        }
+      },
+      "rag_document": "Order #1021 placed on Jan 25, 2026 (Sunday) by Ali Smith for USD 119.86 (~$119.86 USD). Product: PuzzleMaster 1000pc - Men's, a 1000-piece landscape jigsaw puzzle. Customer review (1/5 stars): Item didn't match the product photos, quite underwhelming. Support inquiry (Refund request): Customer requested a refund for order #1021 due to change of mind; refund processed within policy window.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6732443845891",
+        "customer_id": "gid://shopify/Customer/7694529888366",
+        "category": "Toys & Games",
+        "order_month": "2026-01",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 1
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6722526291403",
+      "order_name": "#1009",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-01-28T17:31:10Z",
+        "amount": "3180.37",
+        "currency": "EUR",
+        "customer_name": "Ahmed Ahmed",
+        "customer_email": "ahmed.ahmed333@example.com"
+      },
+      "derived": {
+        "amount_usd": 3466.6,
+        "order_month": "2026-01",
+        "order_weekday": "Wednesday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "BrewMaster Pour-Over Kettle - Men's",
+          "category": "Home & Kitchen",
+          "description": "Gooseneck stainless steel kettle for precision pour-over coffee."
+        },
+        "review": {
+          "rating": 4,
+          "text": "Great quality for the price, would buy again."
+        },
+        "support_ticket": {
+          "subject": "General order status check",
+          "text": "Customer asked for an update on order #1009; confirmed shipped with tracking number provided."
+        }
+      },
+      "rag_document": "Order #1009 placed on Jan 28, 2026 (Wednesday) by Ahmed Ahmed for EUR 3180.37 (~$3466.60 USD). Product: BrewMaster Pour-Over Kettle - Men's, a gooseneck stainless steel kettle for precision pour-over coffee. Customer review (4/5 stars): Great quality for the price, would buy again. Support inquiry (General order status check): Customer asked for an update on order #1009; confirmed shipped with tracking number provided.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6722526291403",
+        "customer_id": "gid://shopify/Customer/7752562516774",
+        "category": "Home & Kitchen",
+        "order_month": "2026-01",
+        "currency": "EUR",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 4
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6781597740482",
+      "order_name": "#1036",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-01-29T04:09:03Z",
+        "amount": "2299.55",
+        "currency": "USD",
+        "customer_name": "Sara Ahmed",
+        "customer_email": "sara.ahmed272@example.com"
+      },
+      "derived": {
+        "amount_usd": 2299.55,
+        "order_month": "2026-01",
+        "order_weekday": "Thursday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "TrailBlaze Camping Tent - Women's",
+          "category": "Outdoor & Sports",
+          "description": "2-person lightweight tent with quick-pitch setup."
+        },
+        "review": {
+          "rating": 4,
+          "text": "Excellent build quality, this has become a daily essential."
+        },
+        "support_ticket": {
+          "subject": "Wrong size received",
+          "text": "Customer reported receiving the wrong size for order #1036; replacement was issued."
+        }
+      },
+      "rag_document": "Order #1036 placed on Jan 29, 2026 (Thursday) by Sara Ahmed for USD 2299.55 (~$2299.55 USD). Product: TrailBlaze Camping Tent - Women's, a 2-person lightweight tent with quick-pitch setup. Customer review (4/5 stars): Excellent build quality, this has become a daily essential. Support inquiry (Wrong size received): Customer reported receiving the wrong size for order #1036; replacement was issued.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6781597740482",
+        "customer_id": "gid://shopify/Customer/7554966271979",
+        "category": "Outdoor & Sports",
+        "order_month": "2026-01",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 4
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6710960723239",
+      "order_name": "#1096",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-02-01T12:43:19Z",
+        "amount": "1210.73",
+        "currency": "USD",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 1210.73,
+        "order_month": "2026-02",
+        "order_weekday": "Sunday",
+        "is_guest_checkout": true,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "PureClay Face Mask - Women's",
+          "category": "Beauty & Personal Care",
+          "description": "Detoxifying clay mask for oily and combination skin."
+        },
+        "review": {
+          "rating": 2,
+          "text": "Poor stitching quality, would not recommend."
+        },
+        "support_ticket": {
+          "subject": "Wrong size received",
+          "text": "Customer reported receiving the wrong size for order #1096; replacement was issued."
+        }
+      },
+      "rag_document": "Order #1096 placed on Feb 01, 2026 (Sunday) by Guest Customer for USD 1210.73 (~$1210.73 USD). Product: PureClay Face Mask - Women's, a detoxifying clay mask for oily and combination skin. Customer review (2/5 stars): Poor stitching quality, would not recommend. Support inquiry (Wrong size received): Customer reported receiving the wrong size for order #1096; replacement was issued.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6710960723239",
+        "customer_id": null,
+        "category": "Beauty & Personal Care",
+        "order_month": "2026-02",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 2
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6706611754494",
+      "order_name": "#1073",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-02-01T19:25:17Z",
+        "amount": "111.63",
+        "currency": "CAD",
+        "customer_name": "Maria Johnson",
+        "customer_email": "maria.johnson800@example.com"
+      },
+      "derived": {
+        "amount_usd": 82.61,
+        "order_month": "2026-02",
+        "order_weekday": "Sunday",
+        "is_guest_checkout": false,
+        "order_value_tier": "low"
+      },
+      "synthetic": {
+        "product": {
+          "name": "BuildBlocks Creative Set",
+          "category": "Toys & Games",
+          "description": "500-piece building block set for imaginative play."
+        },
+        "review": {
+          "rating": 2,
+          "text": "Not as described, requested a return."
+        },
+        "support_ticket": null
+      },
+      "rag_document": "Order #1073 placed on Feb 01, 2026 (Sunday) by Maria Johnson for CAD 111.63 (~$82.61 USD). Product: BuildBlocks Creative Set, a 500-piece building block set for imaginative play. Customer review (2/5 stars): Not as described, requested a return.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6706611754494",
+        "customer_id": "gid://shopify/Customer/7075806791671",
+        "category": "Toys & Games",
+        "order_month": "2026-02",
+        "currency": "CAD",
+        "has_review": true,
+        "has_support_ticket": false,
+        "rating": 2
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6750884600851",
+      "order_name": "#1005",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-02-06T00:27:14Z",
+        "amount": "497.13",
+        "currency": "CAD",
+        "customer_name": "Ali Wilson",
+        "customer_email": "ali.wilson997@example.com"
+      },
+      "derived": {
+        "amount_usd": 367.88,
+        "order_month": "2026-02",
+        "order_weekday": "Friday",
+        "is_guest_checkout": false,
+        "order_value_tier": "low"
+      },
+      "synthetic": {
+        "product": {
+          "name": "EverydayCarry Crossbody Bag",
+          "category": "Bags & Accessories",
+          "description": "Compact crossbody bag with anti-theft zipper."
+        },
+        "review": null,
+        "support_ticket": {
+          "subject": "General order status check",
+          "text": "Customer asked for an update on order #1005; confirmed shipped with tracking number provided."
+        }
+      },
+      "rag_document": "Order #1005 placed on Feb 06, 2026 (Friday) by Ali Wilson for CAD 497.13 (~$367.88 USD). Product: EverydayCarry Crossbody Bag, a compact crossbody bag with anti-theft zipper. Support inquiry (General order status check): Customer asked for an update on order #1005; confirmed shipped with tracking number provided.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6750884600851",
+        "customer_id": "gid://shopify/Customer/7135447068293",
+        "category": "Bags & Accessories",
+        "order_month": "2026-02",
+        "currency": "CAD",
+        "has_review": false,
+        "has_support_ticket": true,
+        "rating": null
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6710932266036",
+      "order_name": "#1002",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-02-09T19:19:27Z",
+        "amount": "3707.23",
+        "currency": "GBP",
+        "customer_name": "Ali Khan",
+        "customer_email": "ali.khan239@example.com"
+      },
+      "derived": {
+        "amount_usd": 4708.18,
+        "order_month": "2026-02",
+        "order_weekday": "Monday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "ComfortStep Slip-Ons",
+          "category": "Footwear",
+          "description": "Casual slip-on shoe with memory foam insole for all-day comfort."
+        },
+        "review": null,
+        "support_ticket": null
+      },
+      "rag_document": "Order #1002 placed on Feb 09, 2026 (Monday) by Ali Khan for GBP 3707.23 (~$4708.18 USD). Product: ComfortStep Slip-Ons, a casual slip-on shoe with memory foam insole for all-day comfort.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6710932266036",
+        "customer_id": "gid://shopify/Customer/7236625619290",
+        "category": "Footwear",
+        "order_month": "2026-02",
+        "currency": "GBP",
+        "has_review": false,
+        "has_support_ticket": false,
+        "rating": null
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6734058579637",
+      "order_name": "#1046",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-02-09T22:06:21Z",
+        "amount": "3903.88",
+        "currency": "USD",
+        "customer_name": "John Iqbal",
+        "customer_email": "john.iqbal755@example.com"
+      },
+      "derived": {
+        "amount_usd": 3903.88,
+        "order_month": "2026-02",
+        "order_weekday": "Monday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "TrailBlaze Camping Tent - Men's",
+          "category": "Outdoor & Sports",
+          "description": "2-person lightweight tent with quick-pitch setup."
+        },
+        "review": {
+          "rating": 4,
+          "text": "Excellent build quality, this has become a daily essential."
+        },
+        "support_ticket": null
+      },
+      "rag_document": "Order #1046 placed on Feb 09, 2026 (Monday) by John Iqbal for USD 3903.88 (~$3903.88 USD). Product: TrailBlaze Camping Tent - Men's, a 2-person lightweight tent with quick-pitch setup. Customer review (4/5 stars): Excellent build quality, this has become a daily essential.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6734058579637",
+        "customer_id": "gid://shopify/Customer/7193379984954",
+        "category": "Outdoor & Sports",
+        "order_month": "2026-02",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": false,
+        "rating": 4
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6739824432345",
+      "order_name": "#1040",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-02-11T13:38:51Z",
+        "amount": "2772.82",
+        "currency": "GBP",
+        "customer_name": "Maria Johnson",
+        "customer_email": "maria.johnson874@example.com"
+      },
+      "derived": {
+        "amount_usd": 3521.48,
+        "order_month": "2026-02",
+        "order_weekday": "Wednesday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "PureClay Face Mask - Unisex",
+          "category": "Beauty & Personal Care",
+          "description": "Detoxifying clay mask for oily and combination skin."
+        },
+        "review": null,
+        "support_ticket": {
+          "subject": "Refund request",
+          "text": "Customer requested a refund for order #1040 due to change of mind; refund processed within policy window."
+        }
+      },
+      "rag_document": "Order #1040 placed on Feb 11, 2026 (Wednesday) by Maria Johnson for GBP 2772.82 (~$3521.48 USD). Product: PureClay Face Mask - Unisex, a detoxifying clay mask for oily and combination skin. Support inquiry (Refund request): Customer requested a refund for order #1040 due to change of mind; refund processed within policy window.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6739824432345",
+        "customer_id": "gid://shopify/Customer/7698737479634",
+        "category": "Beauty & Personal Care",
+        "order_month": "2026-02",
+        "currency": "GBP",
+        "has_review": false,
+        "has_support_ticket": true,
+        "rating": null
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6768112139383",
+      "order_name": "#1048",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-02-11T23:31:27Z",
+        "amount": "4362.75",
+        "currency": "CAD",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 3228.43,
+        "order_month": "2026-02",
+        "order_weekday": "Wednesday",
+        "is_guest_checkout": true,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "BrewMaster Pour-Over Kettle - Men's",
+          "category": "Home & Kitchen",
+          "description": "Gooseneck stainless steel kettle for precision pour-over coffee."
+        },
+        "review": null,
+        "support_ticket": {
+          "subject": "General order status check",
+          "text": "Customer asked for an update on order #1048; confirmed shipped with tracking number provided."
+        }
+      },
+      "rag_document": "Order #1048 placed on Feb 11, 2026 (Wednesday) by Guest Customer for CAD 4362.75 (~$3228.43 USD). Product: BrewMaster Pour-Over Kettle - Men's, a gooseneck stainless steel kettle for precision pour-over coffee. Support inquiry (General order status check): Customer asked for an update on order #1048; confirmed shipped with tracking number provided.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6768112139383",
+        "customer_id": null,
+        "category": "Home & Kitchen",
+        "order_month": "2026-02",
+        "currency": "CAD",
+        "has_review": false,
+        "has_support_ticket": true,
+        "rating": null
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6731116573584",
+      "order_name": "#1001",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-02-13T05:40:50Z",
+        "amount": "3711.63",
+        "currency": "USD",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 3711.63,
+        "order_month": "2026-02",
+        "order_weekday": "Friday",
+        "is_guest_checkout": true,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "FlexGrip Yoga Mat",
+          "category": "Outdoor & Sports",
+          "description": "Non-slip 6mm yoga mat with carrying strap."
+        },
+        "review": null,
+        "support_ticket": {
+          "subject": "Refund request",
+          "text": "Customer requested a refund for order #1001 due to change of mind; refund processed within policy window."
+        }
+      },
+      "rag_document": "Order #1001 placed on Feb 13, 2026 (Friday) by Guest Customer for USD 3711.63 (~$3711.63 USD). Product: FlexGrip Yoga Mat, a non-slip 6mm yoga mat with carrying strap. Support inquiry (Refund request): Customer requested a refund for order #1001 due to change of mind; refund processed within policy window.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6731116573584",
+        "customer_id": null,
+        "category": "Outdoor & Sports",
+        "order_month": "2026-02",
+        "currency": "USD",
+        "has_review": false,
+        "has_support_ticket": true,
+        "rating": null
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6777773691925",
+      "order_name": "#1076",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-02-14T11:31:25Z",
+        "amount": "4824.13",
+        "currency": "USD",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 4824.13,
+        "order_month": "2026-02",
+        "order_weekday": "Saturday",
+        "is_guest_checkout": true,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "AeroFlex Running Shoes",
+          "category": "Footwear",
+          "description": "Lightweight performance running shoe with breathable mesh upper and responsive foam midsole."
+        },
+        "review": null,
+        "support_ticket": {
+          "subject": "General order status check",
+          "text": "Customer asked for an update on order #1076; confirmed shipped with tracking number provided."
+        }
+      },
+      "rag_document": "Order #1076 placed on Feb 14, 2026 (Saturday) by Guest Customer for USD 4824.13 (~$4824.13 USD). Product: AeroFlex Running Shoes, a lightweight performance running shoe with breathable mesh upper and responsive foam midsole. Support inquiry (General order status check): Customer asked for an update on order #1076; confirmed shipped with tracking number provided.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6777773691925",
+        "customer_id": null,
+        "category": "Footwear",
+        "order_month": "2026-02",
+        "currency": "USD",
+        "has_review": false,
+        "has_support_ticket": true,
+        "rating": null
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6799297731516",
+      "order_name": "#1087",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-02-16T20:35:39Z",
+        "amount": "975.03",
+        "currency": "GBP",
+        "customer_name": "John Johnson",
+        "customer_email": "john.johnson496@example.com"
+      },
+      "derived": {
+        "amount_usd": 1238.29,
+        "order_month": "2026-02",
+        "order_weekday": "Monday",
+        "is_guest_checkout": false,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "ClearView Phone Case - Women's",
+          "category": "Electronics Accessories",
+          "description": "Shock-absorbent clear phone case with reinforced corners."
+        },
+        "review": {
+          "rating": 1,
+          "text": "Not as described, requested a return."
+        },
+        "support_ticket": {
+          "subject": "General order status check",
+          "text": "Customer asked for an update on order #1087; confirmed shipped with tracking number provided."
+        }
+      },
+      "rag_document": "Order #1087 placed on Feb 16, 2026 (Monday) by John Johnson for GBP 975.03 (~$1238.29 USD). Product: ClearView Phone Case - Women's, a shock-absorbent clear phone case with reinforced corners. Customer review (1/5 stars): Not as described, requested a return. Support inquiry (General order status check): Customer asked for an update on order #1087; confirmed shipped with tracking number provided.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6799297731516",
+        "customer_id": "gid://shopify/Customer/7812678183898",
+        "category": "Electronics Accessories",
+        "order_month": "2026-02",
+        "currency": "GBP",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 1
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6792189940734",
+      "order_name": "#1063",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-02-17T03:08:38Z",
+        "amount": "679.70",
+        "currency": "CAD",
+        "customer_name": "Michael Taylor",
+        "customer_email": "michael.taylor454@example.com"
+      },
+      "derived": {
+        "amount_usd": 502.98,
+        "order_month": "2026-02",
+        "order_weekday": "Tuesday",
+        "is_guest_checkout": false,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "CozyNight Weighted Blanket - Unisex",
+          "category": "Home & Kitchen",
+          "description": "12lb weighted blanket for improved sleep comfort."
+        },
+        "review": null,
+        "support_ticket": null
+      },
+      "rag_document": "Order #1063 placed on Feb 17, 2026 (Tuesday) by Michael Taylor for CAD 679.70 (~$502.98 USD). Product: CozyNight Weighted Blanket - Unisex, a 12lb weighted blanket for improved sleep comfort.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6792189940734",
+        "customer_id": "gid://shopify/Customer/7982496317586",
+        "category": "Home & Kitchen",
+        "order_month": "2026-02",
+        "currency": "CAD",
+        "has_review": false,
+        "has_support_ticket": false,
+        "rating": null
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6761065692731",
+      "order_name": "#1075",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-02-19T00:27:53Z",
+        "amount": "3352.25",
+        "currency": "CAD",
+        "customer_name": "Maria Malik",
+        "customer_email": "maria.malik987@example.com"
+      },
+      "derived": {
+        "amount_usd": 2480.66,
+        "order_month": "2026-02",
+        "order_weekday": "Thursday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "FlexGrip Yoga Mat - Women's",
+          "category": "Outdoor & Sports",
+          "description": "Non-slip 6mm yoga mat with carrying strap."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Exceeded my expectations, arrived quickly and works perfectly."
+        },
+        "support_ticket": {
+          "subject": "Delayed delivery inquiry",
+          "text": "Customer asked why order #1075 hadn't shipped after 6 days; resolved after tracking update was shared."
+        }
+      },
+      "rag_document": "Order #1075 placed on Feb 19, 2026 (Thursday) by Maria Malik for CAD 3352.25 (~$2480.66 USD). Product: FlexGrip Yoga Mat - Women's, a non-slip 6mm yoga mat with carrying strap. Customer review (5/5 stars): Exceeded my expectations, arrived quickly and works perfectly. Support inquiry (Delayed delivery inquiry): Customer asked why order #1075 hadn't shipped after 6 days; resolved after tracking update was shared.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6761065692731",
+        "customer_id": "gid://shopify/Customer/7668322220181",
+        "category": "Outdoor & Sports",
+        "order_month": "2026-02",
+        "currency": "CAD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6733841208003",
+      "order_name": "#1037",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-02-21T10:35:04Z",
+        "amount": "4406.11",
+        "currency": "USD",
+        "customer_name": "John Wilson",
+        "customer_email": "john.wilson721@example.com"
+      },
+      "derived": {
+        "amount_usd": 4406.11,
+        "order_month": "2026-02",
+        "order_weekday": "Saturday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "CozyNight Weighted Blanket - Unisex",
+          "category": "Home & Kitchen",
+          "description": "12lb weighted blanket for improved sleep comfort."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Great quality for the price, would buy again."
+        },
+        "support_ticket": {
+          "subject": "Delayed delivery inquiry",
+          "text": "Customer asked why order #1037 hadn't shipped after 4 days; resolved after tracking update was shared."
+        }
+      },
+      "rag_document": "Order #1037 placed on Feb 21, 2026 (Saturday) by John Wilson for USD 4406.11 (~$4406.11 USD). Product: CozyNight Weighted Blanket - Unisex, a 12lb weighted blanket for improved sleep comfort. Customer review (5/5 stars): Great quality for the price, would buy again. Support inquiry (Delayed delivery inquiry): Customer asked why order #1037 hadn't shipped after 4 days; resolved after tracking update was shared.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6733841208003",
+        "customer_id": "gid://shopify/Customer/7600581361458",
+        "category": "Home & Kitchen",
+        "order_month": "2026-02",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6704601670222",
+      "order_name": "#1100",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-02-27T20:40:54Z",
+        "amount": "4135.76",
+        "currency": "USD",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 4135.76,
+        "order_month": "2026-02",
+        "order_weekday": "Friday",
+        "is_guest_checkout": true,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "ClassicFit Denim Jeans - Unisex",
+          "category": "Apparel",
+          "description": "Straight-leg denim jean with reinforced stitching."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Excellent build quality, this has become a daily essential."
+        },
+        "support_ticket": {
+          "subject": "Wrong size received",
+          "text": "Customer reported receiving the wrong size for order #1100; replacement was issued."
+        }
+      },
+      "rag_document": "Order #1100 placed on Feb 27, 2026 (Friday) by Guest Customer for USD 4135.76 (~$4135.76 USD). Product: ClassicFit Denim Jeans - Unisex, a straight-leg denim jean with reinforced stitching. Customer review (5/5 stars): Excellent build quality, this has become a daily essential. Support inquiry (Wrong size received): Customer reported receiving the wrong size for order #1100; replacement was issued.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6704601670222",
+        "customer_id": null,
+        "category": "Apparel",
+        "order_month": "2026-02",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6713950873922",
+      "order_name": "#1093",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-02-27T22:37:20Z",
+        "amount": "4746.39",
+        "currency": "EUR",
+        "customer_name": "David Taylor",
+        "customer_email": "david.taylor634@example.com"
+      },
+      "derived": {
+        "amount_usd": 5173.57,
+        "order_month": "2026-02",
+        "order_weekday": "Friday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "BuildBlocks Creative Set - Women's",
+          "category": "Toys & Games",
+          "description": "500-piece building block set for imaginative play."
+        },
+        "review": {
+          "rating": 2,
+          "text": "Not as described, requested a return."
+        },
+        "support_ticket": null
+      },
+      "rag_document": "Order #1093 placed on Feb 27, 2026 (Friday) by David Taylor for EUR 4746.39 (~$5173.57 USD). Product: BuildBlocks Creative Set - Women's, a 500-piece building block set for imaginative play. Customer review (2/5 stars): Not as described, requested a return.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6713950873922",
+        "customer_id": "gid://shopify/Customer/7870143739098",
+        "category": "Toys & Games",
+        "order_month": "2026-02",
+        "currency": "EUR",
+        "has_review": true,
+        "has_support_ticket": false,
+        "rating": 2
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6737450743307",
+      "order_name": "#1015",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-03-03T10:08:13Z",
+        "amount": "31.18",
+        "currency": "CAD",
+        "customer_name": "John Ahmed",
+        "customer_email": "john.ahmed892@example.com"
+      },
+      "derived": {
+        "amount_usd": 23.07,
+        "order_month": "2026-03",
+        "order_weekday": "Tuesday",
+        "is_guest_checkout": false,
+        "order_value_tier": "low"
+      },
+      "synthetic": {
+        "product": {
+          "name": "TravelLite Packing Cubes - Women's",
+          "category": "Bags & Accessories",
+          "description": "Set of 4 compression packing cubes for organized travel."
+        },
+        "review": {
+          "rating": 4,
+          "text": "Great quality for the price, would buy again."
+        },
+        "support_ticket": null
+      },
+      "rag_document": "Order #1015 placed on Mar 03, 2026 (Tuesday) by John Ahmed for CAD 31.18 (~$23.07 USD). Product: TravelLite Packing Cubes - Women's, a set of 4 compression packing cubes for organized travel. Customer review (4/5 stars): Great quality for the price, would buy again.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6737450743307",
+        "customer_id": "gid://shopify/Customer/7119883823727",
+        "category": "Bags & Accessories",
+        "order_month": "2026-03",
+        "currency": "CAD",
+        "has_review": true,
+        "has_support_ticket": false,
+        "rating": 4
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6719473961937",
+      "order_name": "#1089",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-03-11T16:30:59Z",
+        "amount": "85.53",
+        "currency": "USD",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 85.53,
+        "order_month": "2026-03",
+        "order_weekday": "Wednesday",
+        "is_guest_checkout": true,
+        "order_value_tier": "low"
+      },
+      "synthetic": {
+        "product": {
+          "name": "EverWarm Fleece Jacket - Women's",
+          "category": "Apparel",
+          "description": "Mid-weight fleece jacket with zip pockets, ideal for cool weather layering."
+        },
+        "review": {
+          "rating": 3,
+          "text": "Good product overall but sizing/fit ran differently than expected."
+        },
+        "support_ticket": {
+          "subject": "Wrong size received",
+          "text": "Customer reported receiving the wrong size for order #1089; replacement was issued."
+        }
+      },
+      "rag_document": "Order #1089 placed on Mar 11, 2026 (Wednesday) by Guest Customer for USD 85.53 (~$85.53 USD). Product: EverWarm Fleece Jacket - Women's, a mid-weight fleece jacket with zip pockets, ideal for cool weather layering. Customer review (3/5 stars): Good product overall but sizing/fit ran differently than expected. Support inquiry (Wrong size received): Customer reported receiving the wrong size for order #1089; replacement was issued.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6719473961937",
+        "customer_id": null,
+        "category": "Apparel",
+        "order_month": "2026-03",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 3
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6701872852789",
+      "order_name": "#1053",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-03-15T19:39:45Z",
+        "amount": "236.27",
+        "currency": "USD",
+        "customer_name": "Michael Johnson",
+        "customer_email": "michael.johnson72@example.com"
+      },
+      "derived": {
+        "amount_usd": 236.27,
+        "order_month": "2026-03",
+        "order_weekday": "Sunday",
+        "is_guest_checkout": false,
+        "order_value_tier": "low"
+      },
+      "synthetic": {
+        "product": {
+          "name": "BuildBlocks Creative Set - Women's",
+          "category": "Toys & Games",
+          "description": "500-piece building block set for imaginative play."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Excellent build quality, this has become a daily essential."
+        },
+        "support_ticket": {
+          "subject": "Delayed delivery inquiry",
+          "text": "Customer asked why order #1053 hadn't shipped after 5 days; resolved after tracking update was shared."
+        }
+      },
+      "rag_document": "Order #1053 placed on Mar 15, 2026 (Sunday) by Michael Johnson for USD 236.27 (~$236.27 USD). Product: BuildBlocks Creative Set - Women's, a 500-piece building block set for imaginative play. Customer review (5/5 stars): Excellent build quality, this has become a daily essential. Support inquiry (Delayed delivery inquiry): Customer asked why order #1053 hadn't shipped after 5 days; resolved after tracking update was shared.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6701872852789",
+        "customer_id": "gid://shopify/Customer/7474010721878",
+        "category": "Toys & Games",
+        "order_month": "2026-03",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6766170104931",
+      "order_name": "#1084",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-03-16T04:46:29Z",
+        "amount": "1218.16",
+        "currency": "USD",
+        "customer_name": "Emma Wilson",
+        "customer_email": "emma.wilson503@example.com"
+      },
+      "derived": {
+        "amount_usd": 1218.16,
+        "order_month": "2026-03",
+        "order_weekday": "Monday",
+        "is_guest_checkout": false,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "EverWarm Fleece Jacket",
+          "category": "Apparel",
+          "description": "Mid-weight fleece jacket with zip pockets, ideal for cool weather layering."
+        },
+        "review": {
+          "rating": 1,
+          "text": "Not as described, requested a return."
+        },
+        "support_ticket": {
+          "subject": "Product defect report",
+          "text": "Customer reported a defect with the item in order #1084; replacement unit shipped free of charge."
+        }
+      },
+      "rag_document": "Order #1084 placed on Mar 16, 2026 (Monday) by Emma Wilson for USD 1218.16 (~$1218.16 USD). Product: EverWarm Fleece Jacket, a mid-weight fleece jacket with zip pockets, ideal for cool weather layering. Customer review (1/5 stars): Not as described, requested a return. Support inquiry (Product defect report): Customer reported a defect with the item in order #1084; replacement unit shipped free of charge.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6766170104931",
+        "customer_id": "gid://shopify/Customer/7784458179683",
+        "category": "Apparel",
+        "order_month": "2026-03",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 1
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6712302302217",
+      "order_name": "#1050",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-03-17T00:06:00Z",
+        "amount": "1651.39",
+        "currency": "CAD",
+        "customer_name": "Ahmed Brown",
+        "customer_email": "ahmed.brown410@example.com"
+      },
+      "derived": {
+        "amount_usd": 1222.03,
+        "order_month": "2026-03",
+        "order_weekday": "Tuesday",
+        "is_guest_checkout": false,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "ChopEase Knife Set",
+          "category": "Home & Kitchen",
+          "description": "5-piece kitchen knife set with ergonomic handles and storage block."
+        },
+        "review": null,
+        "support_ticket": {
+          "subject": "Refund request",
+          "text": "Customer requested a refund for order #1050 due to change of mind; refund processed within policy window."
+        }
+      },
+      "rag_document": "Order #1050 placed on Mar 17, 2026 (Tuesday) by Ahmed Brown for CAD 1651.39 (~$1222.03 USD). Product: ChopEase Knife Set, a 5-piece kitchen knife set with ergonomic handles and storage block. Support inquiry (Refund request): Customer requested a refund for order #1050 due to change of mind; refund processed within policy window.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6712302302217",
+        "customer_id": "gid://shopify/Customer/7561100891573",
+        "category": "Home & Kitchen",
+        "order_month": "2026-03",
+        "currency": "CAD",
+        "has_review": false,
+        "has_support_ticket": true,
+        "rating": null
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6753662941333",
+      "order_name": "#1061",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-03-17T12:16:03Z",
+        "amount": "3486.33",
+        "currency": "GBP",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 4427.64,
+        "order_month": "2026-03",
+        "order_weekday": "Tuesday",
+        "is_guest_checkout": true,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "SilkSmooth Hair Dryer - Women's",
+          "category": "Beauty & Personal Care",
+          "description": "Ionic hair dryer with ceramic technology to reduce frizz."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Really happy with this purchase, exactly as described."
+        },
+        "support_ticket": {
+          "subject": "Delayed delivery inquiry",
+          "text": "Customer asked why order #1061 hadn't shipped after 6 days; resolved after tracking update was shared."
+        }
+      },
+      "rag_document": "Order #1061 placed on Mar 17, 2026 (Tuesday) by Guest Customer for GBP 3486.33 (~$4427.64 USD). Product: SilkSmooth Hair Dryer - Women's, a ionic hair dryer with ceramic technology to reduce frizz. Customer review (5/5 stars): Really happy with this purchase, exactly as described. Support inquiry (Delayed delivery inquiry): Customer asked why order #1061 hadn't shipped after 6 days; resolved after tracking update was shared.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6753662941333",
+        "customer_id": null,
+        "category": "Beauty & Personal Care",
+        "order_month": "2026-03",
+        "currency": "GBP",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6706623677968",
+      "order_name": "#1031",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-03-26T13:07:09Z",
+        "amount": "2902.21",
+        "currency": "USD",
+        "customer_name": "Ali Khan",
+        "customer_email": "ali.khan515@example.com"
+      },
+      "derived": {
+        "amount_usd": 2902.21,
+        "order_month": "2026-03",
+        "order_weekday": "Thursday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "ComfortStep Slip-Ons - Men's",
+          "category": "Footwear",
+          "description": "Casual slip-on shoe with memory foam insole for all-day comfort."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Fast shipping and the product feels premium for the cost."
+        },
+        "support_ticket": {
+          "subject": "General order status check",
+          "text": "Customer asked for an update on order #1031; confirmed shipped with tracking number provided."
+        }
+      },
+      "rag_document": "Order #1031 placed on Mar 26, 2026 (Thursday) by Ali Khan for USD 2902.21 (~$2902.21 USD). Product: ComfortStep Slip-Ons - Men's, a casual slip-on shoe with memory foam insole for all-day comfort. Customer review (5/5 stars): Fast shipping and the product feels premium for the cost. Support inquiry (General order status check): Customer asked for an update on order #1031; confirmed shipped with tracking number provided.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6706623677968",
+        "customer_id": "gid://shopify/Customer/7526495033786",
+        "category": "Footwear",
+        "order_month": "2026-03",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6766296410718",
+      "order_name": "#1069",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-03-27T15:34:10Z",
+        "amount": "1108.82",
+        "currency": "CAD",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 820.53,
+        "order_month": "2026-03",
+        "order_weekday": "Friday",
+        "is_guest_checkout": true,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "ComfortStep Slip-Ons",
+          "category": "Footwear",
+          "description": "Casual slip-on shoe with memory foam insole for all-day comfort."
+        },
+        "review": {
+          "rating": 2,
+          "text": "Disappointed with the quality, stopped working after two weeks."
+        },
+        "support_ticket": null
+      },
+      "rag_document": "Order #1069 placed on Mar 27, 2026 (Friday) by Guest Customer for CAD 1108.82 (~$820.53 USD). Product: ComfortStep Slip-Ons, a casual slip-on shoe with memory foam insole for all-day comfort. Customer review (2/5 stars): Disappointed with the quality, stopped working after two weeks.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6766296410718",
+        "customer_id": null,
+        "category": "Footwear",
+        "order_month": "2026-03",
+        "currency": "CAD",
+        "has_review": true,
+        "has_support_ticket": false,
+        "rating": 2
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6764031538749",
+      "order_name": "#1094",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-03-29T15:33:23Z",
+        "amount": "1911.18",
+        "currency": "EUR",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 2083.19,
+        "order_month": "2026-03",
+        "order_weekday": "Sunday",
+        "is_guest_checkout": true,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "ChopEase Knife Set",
+          "category": "Home & Kitchen",
+          "description": "5-piece kitchen knife set with ergonomic handles and storage block."
+        },
+        "review": {
+          "rating": 1,
+          "text": "Item didn't match the product photos, quite underwhelming."
+        },
+        "support_ticket": {
+          "subject": "General order status check",
+          "text": "Customer asked for an update on order #1094; confirmed shipped with tracking number provided."
+        }
+      },
+      "rag_document": "Order #1094 placed on Mar 29, 2026 (Sunday) by Guest Customer for EUR 1911.18 (~$2083.19 USD). Product: ChopEase Knife Set, a 5-piece kitchen knife set with ergonomic handles and storage block. Customer review (1/5 stars): Item didn't match the product photos, quite underwhelming. Support inquiry (General order status check): Customer asked for an update on order #1094; confirmed shipped with tracking number provided.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6764031538749",
+        "customer_id": null,
+        "category": "Home & Kitchen",
+        "order_month": "2026-03",
+        "currency": "EUR",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 1
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6746641778881",
+      "order_name": "#1022",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-03-30T21:53:31Z",
+        "amount": "4528.52",
+        "currency": "USD",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 4528.52,
+        "order_month": "2026-03",
+        "order_weekday": "Monday",
+        "is_guest_checkout": true,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "FlexFit Yoga Leggings - Men's",
+          "category": "Apparel",
+          "description": "High-waisted stretch leggings with moisture-wicking fabric."
+        },
+        "review": {
+          "rating": 1,
+          "text": "Not as described, requested a return."
+        },
+        "support_ticket": {
+          "subject": "Refund request",
+          "text": "Customer requested a refund for order #1022 due to change of mind; refund processed within policy window."
+        }
+      },
+      "rag_document": "Order #1022 placed on Mar 30, 2026 (Monday) by Guest Customer for USD 4528.52 (~$4528.52 USD). Product: FlexFit Yoga Leggings - Men's, a high-waisted stretch leggings with moisture-wicking fabric. Customer review (1/5 stars): Not as described, requested a return. Support inquiry (Refund request): Customer requested a refund for order #1022 due to change of mind; refund processed within policy window.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6746641778881",
+        "customer_id": null,
+        "category": "Apparel",
+        "order_month": "2026-03",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 1
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6779994015016",
+      "order_name": "#1099",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-04-01T15:40:03Z",
+        "amount": "3942.32",
+        "currency": "USD",
+        "customer_name": "Emma Iqbal",
+        "customer_email": "emma.iqbal231@example.com"
+      },
+      "derived": {
+        "amount_usd": 3942.32,
+        "order_month": "2026-04",
+        "order_weekday": "Wednesday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "SilkSmooth Hair Dryer - Unisex",
+          "category": "Beauty & Personal Care",
+          "description": "Ionic hair dryer with ceramic technology to reduce frizz."
+        },
+        "review": {
+          "rating": 3,
+          "text": "Decent quality, though I expected slightly better durability."
+        },
+        "support_ticket": {
+          "subject": "Delayed delivery inquiry",
+          "text": "Customer asked why order #1099 hadn't shipped after 2 days; resolved after tracking update was shared."
+        }
+      },
+      "rag_document": "Order #1099 placed on Apr 01, 2026 (Wednesday) by Emma Iqbal for USD 3942.32 (~$3942.32 USD). Product: SilkSmooth Hair Dryer - Unisex, a ionic hair dryer with ceramic technology to reduce frizz. Customer review (3/5 stars): Decent quality, though I expected slightly better durability. Support inquiry (Delayed delivery inquiry): Customer asked why order #1099 hadn't shipped after 2 days; resolved after tracking update was shared.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6779994015016",
+        "customer_id": "gid://shopify/Customer/7597493414595",
+        "category": "Beauty & Personal Care",
+        "order_month": "2026-04",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 3
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6781133166233",
+      "order_name": "#1033",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-04-02T08:15:33Z",
+        "amount": "612.63",
+        "currency": "CAD",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 453.35,
+        "order_month": "2026-04",
+        "order_weekday": "Thursday",
+        "is_guest_checkout": true,
+        "order_value_tier": "low"
+      },
+      "synthetic": {
+        "product": {
+          "name": "StrategyMind Board Game",
+          "category": "Toys & Games",
+          "description": "Family strategy board game for 2-6 players."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Exceeded my expectations, arrived quickly and works perfectly."
+        },
+        "support_ticket": {
+          "subject": "Wrong size received",
+          "text": "Customer reported receiving the wrong size for order #1033; replacement was issued."
+        }
+      },
+      "rag_document": "Order #1033 placed on Apr 02, 2026 (Thursday) by Guest Customer for CAD 612.63 (~$453.35 USD). Product: StrategyMind Board Game, a family strategy board game for 2-6 players. Customer review (5/5 stars): Exceeded my expectations, arrived quickly and works perfectly. Support inquiry (Wrong size received): Customer reported receiving the wrong size for order #1033; replacement was issued.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6781133166233",
+        "customer_id": null,
+        "category": "Toys & Games",
+        "order_month": "2026-04",
+        "currency": "CAD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6773934584122",
+      "order_name": "#1023",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-04-03T10:21:50Z",
+        "amount": "3349.85",
+        "currency": "USD",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 3349.85,
+        "order_month": "2026-04",
+        "order_weekday": "Friday",
+        "is_guest_checkout": true,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "EverWarm Fleece Jacket - Men's",
+          "category": "Apparel",
+          "description": "Mid-weight fleece jacket with zip pockets, ideal for cool weather layering."
+        },
+        "review": null,
+        "support_ticket": null
+      },
+      "rag_document": "Order #1023 placed on Apr 03, 2026 (Friday) by Guest Customer for USD 3349.85 (~$3349.85 USD). Product: EverWarm Fleece Jacket - Men's, a mid-weight fleece jacket with zip pockets, ideal for cool weather layering.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6773934584122",
+        "customer_id": null,
+        "category": "Apparel",
+        "order_month": "2026-04",
+        "currency": "USD",
+        "has_review": false,
+        "has_support_ticket": false,
+        "rating": null
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6784543248820",
+      "order_name": "#1078",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-04-05T07:31:13Z",
+        "amount": "3490.51",
+        "currency": "USD",
+        "customer_name": "Ayesha Khan",
+        "customer_email": "ayesha.khan439@example.com"
+      },
+      "derived": {
+        "amount_usd": 3490.51,
+        "order_month": "2026-04",
+        "order_weekday": "Sunday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "PureClay Face Mask",
+          "category": "Beauty & Personal Care",
+          "description": "Detoxifying clay mask for oily and combination skin."
+        },
+        "review": {
+          "rating": 3,
+          "text": "Solid purchase, only complaint is the color looked different online."
+        },
+        "support_ticket": null
+      },
+      "rag_document": "Order #1078 placed on Apr 05, 2026 (Sunday) by Ayesha Khan for USD 3490.51 (~$3490.51 USD). Product: PureClay Face Mask, a detoxifying clay mask for oily and combination skin. Customer review (3/5 stars): Solid purchase, only complaint is the color looked different online.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6784543248820",
+        "customer_id": "gid://shopify/Customer/7585606781064",
+        "category": "Beauty & Personal Care",
+        "order_month": "2026-04",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": false,
+        "rating": 3
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6754409455182",
+      "order_name": "#1082",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-04-05T16:58:19Z",
+        "amount": "2855.70",
+        "currency": "CAD",
+        "customer_name": "Fatima Brown",
+        "customer_email": "fatima.brown218@example.com"
+      },
+      "derived": {
+        "amount_usd": 2113.22,
+        "order_month": "2026-04",
+        "order_weekday": "Sunday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "EverWarm Fleece Jacket - Men's",
+          "category": "Apparel",
+          "description": "Mid-weight fleece jacket with zip pockets, ideal for cool weather layering."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Great quality for the price, would buy again."
+        },
+        "support_ticket": {
+          "subject": "Wrong size received",
+          "text": "Customer reported receiving the wrong size for order #1082; replacement was issued."
+        }
+      },
+      "rag_document": "Order #1082 placed on Apr 05, 2026 (Sunday) by Fatima Brown for CAD 2855.70 (~$2113.22 USD). Product: EverWarm Fleece Jacket - Men's, a mid-weight fleece jacket with zip pockets, ideal for cool weather layering. Customer review (5/5 stars): Great quality for the price, would buy again. Support inquiry (Wrong size received): Customer reported receiving the wrong size for order #1082; replacement was issued.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6754409455182",
+        "customer_id": "gid://shopify/Customer/7533356940935",
+        "category": "Apparel",
+        "order_month": "2026-04",
+        "currency": "CAD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6711890571177",
+      "order_name": "#1060",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-04-06T02:05:52Z",
+        "amount": "3062.20",
+        "currency": "CAD",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 2266.03,
+        "order_month": "2026-04",
+        "order_weekday": "Monday",
+        "is_guest_checkout": true,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "PureClay Face Mask - Unisex",
+          "category": "Beauty & Personal Care",
+          "description": "Detoxifying clay mask for oily and combination skin."
+        },
+        "review": {
+          "rating": 3,
+          "text": "Works well but packaging arrived slightly damaged."
+        },
+        "support_ticket": {
+          "subject": "Refund request",
+          "text": "Customer requested a refund for order #1060 due to change of mind; refund processed within policy window."
+        }
+      },
+      "rag_document": "Order #1060 placed on Apr 06, 2026 (Monday) by Guest Customer for CAD 3062.20 (~$2266.03 USD). Product: PureClay Face Mask - Unisex, a detoxifying clay mask for oily and combination skin. Customer review (3/5 stars): Works well but packaging arrived slightly damaged. Support inquiry (Refund request): Customer requested a refund for order #1060 due to change of mind; refund processed within policy window.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6711890571177",
+        "customer_id": null,
+        "category": "Beauty & Personal Care",
+        "order_month": "2026-04",
+        "currency": "CAD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 3
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6707928955072",
+      "order_name": "#1041",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-04-13T12:30:29Z",
+        "amount": "2450.33",
+        "currency": "EUR",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 2670.86,
+        "order_month": "2026-04",
+        "order_weekday": "Monday",
+        "is_guest_checkout": true,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "PuzzleMaster 1000pc",
+          "category": "Toys & Games",
+          "description": "1000-piece landscape jigsaw puzzle."
+        },
+        "review": null,
+        "support_ticket": {
+          "subject": "Delayed delivery inquiry",
+          "text": "Customer asked why order #1041 hadn't shipped after 2 days; resolved after tracking update was shared."
+        }
+      },
+      "rag_document": "Order #1041 placed on Apr 13, 2026 (Monday) by Guest Customer for EUR 2450.33 (~$2670.86 USD). Product: PuzzleMaster 1000pc, a 1000-piece landscape jigsaw puzzle. Support inquiry (Delayed delivery inquiry): Customer asked why order #1041 hadn't shipped after 2 days; resolved after tracking update was shared.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6707928955072",
+        "customer_id": null,
+        "category": "Toys & Games",
+        "order_month": "2026-04",
+        "currency": "EUR",
+        "has_review": false,
+        "has_support_ticket": true,
+        "rating": null
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6749111077388",
+      "order_name": "#1052",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-04-14T02:19:33Z",
+        "amount": "555.39",
+        "currency": "USD",
+        "customer_name": "Maria Iqbal",
+        "customer_email": "maria.iqbal395@example.com"
+      },
+      "derived": {
+        "amount_usd": 555.39,
+        "order_month": "2026-04",
+        "order_weekday": "Tuesday",
+        "is_guest_checkout": false,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "TrailBlaze Camping Tent - Men's",
+          "category": "Outdoor & Sports",
+          "description": "2-person lightweight tent with quick-pitch setup."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Excellent build quality, this has become a daily essential."
+        },
+        "support_ticket": {
+          "subject": "Product defect report",
+          "text": "Customer reported a defect with the item in order #1052; replacement unit shipped free of charge."
+        }
+      },
+      "rag_document": "Order #1052 placed on Apr 14, 2026 (Tuesday) by Maria Iqbal for USD 555.39 (~$555.39 USD). Product: TrailBlaze Camping Tent - Men's, a 2-person lightweight tent with quick-pitch setup. Customer review (5/5 stars): Excellent build quality, this has become a daily essential. Support inquiry (Product defect report): Customer reported a defect with the item in order #1052; replacement unit shipped free of charge.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6749111077388",
+        "customer_id": "gid://shopify/Customer/7126750596909",
+        "category": "Outdoor & Sports",
+        "order_month": "2026-04",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6771984544780",
+      "order_name": "#1088",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-04-18T09:09:47Z",
+        "amount": "2954.09",
+        "currency": "GBP",
+        "customer_name": "Sara Johnson",
+        "customer_email": "sara.johnson370@example.com"
+      },
+      "derived": {
+        "amount_usd": 3751.69,
+        "order_month": "2026-04",
+        "order_weekday": "Saturday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "AeroFlex Running Shoes",
+          "category": "Footwear",
+          "description": "Lightweight performance running shoe with breathable mesh upper and responsive foam midsole."
+        },
+        "review": {
+          "rating": 1,
+          "text": "Not as described, requested a return."
+        },
+        "support_ticket": {
+          "subject": "Refund request",
+          "text": "Customer requested a refund for order #1088 due to change of mind; refund processed within policy window."
+        }
+      },
+      "rag_document": "Order #1088 placed on Apr 18, 2026 (Saturday) by Sara Johnson for GBP 2954.09 (~$3751.69 USD). Product: AeroFlex Running Shoes, a lightweight performance running shoe with breathable mesh upper and responsive foam midsole. Customer review (1/5 stars): Not as described, requested a return. Support inquiry (Refund request): Customer requested a refund for order #1088 due to change of mind; refund processed within policy window.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6771984544780",
+        "customer_id": "gid://shopify/Customer/7250380472038",
+        "category": "Footwear",
+        "order_month": "2026-04",
+        "currency": "GBP",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 1
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6735387291545",
+      "order_name": "#1065",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-04-18T16:43:44Z",
+        "amount": "2430.72",
+        "currency": "EUR",
+        "customer_name": "Ahmed Johnson",
+        "customer_email": "ahmed.johnson328@example.com"
+      },
+      "derived": {
+        "amount_usd": 2649.48,
+        "order_month": "2026-04",
+        "order_weekday": "Saturday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "PowerCore 10000 Power Bank - Unisex",
+          "category": "Electronics Accessories",
+          "description": "Compact 10000mAh power bank with dual USB-C fast charging."
+        },
+        "review": null,
+        "support_ticket": {
+          "subject": "Delayed delivery inquiry",
+          "text": "Customer asked why order #1065 hadn't shipped after 4 days; resolved after tracking update was shared."
+        }
+      },
+      "rag_document": "Order #1065 placed on Apr 18, 2026 (Saturday) by Ahmed Johnson for EUR 2430.72 (~$2649.48 USD). Product: PowerCore 10000 Power Bank - Unisex, a compact 10000mah power bank with dual usb-c fast charging. Support inquiry (Delayed delivery inquiry): Customer asked why order #1065 hadn't shipped after 4 days; resolved after tracking update was shared.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6735387291545",
+        "customer_id": "gid://shopify/Customer/7366239227673",
+        "category": "Electronics Accessories",
+        "order_month": "2026-04",
+        "currency": "EUR",
+        "has_review": false,
+        "has_support_ticket": true,
+        "rating": null
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6795175012036",
+      "order_name": "#1004",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-04-19T00:55:31Z",
+        "amount": "3797.65",
+        "currency": "USD",
+        "customer_name": "Ahmed Malik",
+        "customer_email": "ahmed.malik105@example.com"
+      },
+      "derived": {
+        "amount_usd": 3797.65,
+        "order_month": "2026-04",
+        "order_weekday": "Sunday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "CozyNight Weighted Blanket - Unisex",
+          "category": "Home & Kitchen",
+          "description": "12lb weighted blanket for improved sleep comfort."
+        },
+        "review": null,
+        "support_ticket": {
+          "subject": "Product defect report",
+          "text": "Customer reported a defect with the item in order #1004; replacement unit shipped free of charge."
+        }
+      },
+      "rag_document": "Order #1004 placed on Apr 19, 2026 (Sunday) by Ahmed Malik for USD 3797.65 (~$3797.65 USD). Product: CozyNight Weighted Blanket - Unisex, a 12lb weighted blanket for improved sleep comfort. Support inquiry (Product defect report): Customer reported a defect with the item in order #1004; replacement unit shipped free of charge.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6795175012036",
+        "customer_id": "gid://shopify/Customer/7372646369774",
+        "category": "Home & Kitchen",
+        "order_month": "2026-04",
+        "currency": "USD",
+        "has_review": false,
+        "has_support_ticket": true,
+        "rating": null
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6722938157341",
+      "order_name": "#1091",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-04-21T10:14:04Z",
+        "amount": "2401.39",
+        "currency": "CAD",
+        "customer_name": "Ahmed Wilson",
+        "customer_email": "ahmed.wilson67@example.com"
+      },
+      "derived": {
+        "amount_usd": 1777.03,
+        "order_month": "2026-04",
+        "order_weekday": "Tuesday",
+        "is_guest_checkout": false,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "SoundWave Bluetooth Earbuds - Unisex",
+          "category": "Electronics Accessories",
+          "description": "Wireless earbuds with 24-hour battery life and noise isolation."
+        },
+        "review": null,
+        "support_ticket": {
+          "subject": "Delayed delivery inquiry",
+          "text": "Customer asked why order #1091 hadn't shipped after 3 days; resolved after tracking update was shared."
+        }
+      },
+      "rag_document": "Order #1091 placed on Apr 21, 2026 (Tuesday) by Ahmed Wilson for CAD 2401.39 (~$1777.03 USD). Product: SoundWave Bluetooth Earbuds - Unisex, a wireless earbuds with 24-hour battery life and noise isolation. Support inquiry (Delayed delivery inquiry): Customer asked why order #1091 hadn't shipped after 3 days; resolved after tracking update was shared.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6722938157341",
+        "customer_id": "gid://shopify/Customer/7902433132686",
+        "category": "Electronics Accessories",
+        "order_month": "2026-04",
+        "currency": "CAD",
+        "has_review": false,
+        "has_support_ticket": true,
+        "rating": null
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6784095394278",
+      "order_name": "#1057",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-04-22T10:13:46Z",
+        "amount": "2157.99",
+        "currency": "USD",
+        "customer_name": "Fatima Wilson",
+        "customer_email": "fatima.wilson219@example.com"
+      },
+      "derived": {
+        "amount_usd": 2157.99,
+        "order_month": "2026-04",
+        "order_weekday": "Wednesday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "FlexGrip Yoga Mat - Unisex",
+          "category": "Outdoor & Sports",
+          "description": "Non-slip 6mm yoga mat with carrying strap."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Great quality for the price, would buy again."
+        },
+        "support_ticket": {
+          "subject": "Delayed delivery inquiry",
+          "text": "Customer asked why order #1057 hadn't shipped after 5 days; resolved after tracking update was shared."
+        }
+      },
+      "rag_document": "Order #1057 placed on Apr 22, 2026 (Wednesday) by Fatima Wilson for USD 2157.99 (~$2157.99 USD). Product: FlexGrip Yoga Mat - Unisex, a non-slip 6mm yoga mat with carrying strap. Customer review (5/5 stars): Great quality for the price, would buy again. Support inquiry (Delayed delivery inquiry): Customer asked why order #1057 hadn't shipped after 5 days; resolved after tracking update was shared.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6784095394278",
+        "customer_id": "gid://shopify/Customer/7740633436777",
+        "category": "Outdoor & Sports",
+        "order_month": "2026-04",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6763821524943",
+      "order_name": "#1098",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-04-22T21:19:55Z",
+        "amount": "1424.35",
+        "currency": "GBP",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 1808.92,
+        "order_month": "2026-04",
+        "order_weekday": "Wednesday",
+        "is_guest_checkout": true,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "BrewMaster Pour-Over Kettle - Women's",
+          "category": "Home & Kitchen",
+          "description": "Gooseneck stainless steel kettle for precision pour-over coffee."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Exceeded my expectations, arrived quickly and works perfectly."
+        },
+        "support_ticket": null
+      },
+      "rag_document": "Order #1098 placed on Apr 22, 2026 (Wednesday) by Guest Customer for GBP 1424.35 (~$1808.92 USD). Product: BrewMaster Pour-Over Kettle - Women's, a gooseneck stainless steel kettle for precision pour-over coffee. Customer review (5/5 stars): Exceeded my expectations, arrived quickly and works perfectly.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6763821524943",
+        "customer_id": null,
+        "category": "Home & Kitchen",
+        "order_month": "2026-04",
+        "currency": "GBP",
+        "has_review": true,
+        "has_support_ticket": false,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6718034185865",
+      "order_name": "#1016",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-04-26T21:42:25Z",
+        "amount": "2545.70",
+        "currency": "GBP",
+        "customer_name": "John Ahmed",
+        "customer_email": "john.ahmed945@example.com"
+      },
+      "derived": {
+        "amount_usd": 3233.04,
+        "order_month": "2026-04",
+        "order_weekday": "Sunday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "ChopEase Knife Set - Men's",
+          "category": "Home & Kitchen",
+          "description": "5-piece kitchen knife set with ergonomic handles and storage block."
+        },
+        "review": null,
+        "support_ticket": {
+          "subject": "Refund request",
+          "text": "Customer requested a refund for order #1016 due to change of mind; refund processed within policy window."
+        }
+      },
+      "rag_document": "Order #1016 placed on Apr 26, 2026 (Sunday) by John Ahmed for GBP 2545.70 (~$3233.04 USD). Product: ChopEase Knife Set - Men's, a 5-piece kitchen knife set with ergonomic handles and storage block. Support inquiry (Refund request): Customer requested a refund for order #1016 due to change of mind; refund processed within policy window.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6718034185865",
+        "customer_id": "gid://shopify/Customer/7858793742143",
+        "category": "Home & Kitchen",
+        "order_month": "2026-04",
+        "currency": "GBP",
+        "has_review": false,
+        "has_support_ticket": true,
+        "rating": null
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6720951395781",
+      "order_name": "#1039",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-04-27T06:24:43Z",
+        "amount": "531.38",
+        "currency": "GBP",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 674.85,
+        "order_month": "2026-04",
+        "order_weekday": "Monday",
+        "is_guest_checkout": true,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "EverydayCarry Crossbody Bag - Men's",
+          "category": "Bags & Accessories",
+          "description": "Compact crossbody bag with anti-theft zipper."
+        },
+        "review": null,
+        "support_ticket": {
+          "subject": "Refund request",
+          "text": "Customer requested a refund for order #1039 due to change of mind; refund processed within policy window."
+        }
+      },
+      "rag_document": "Order #1039 placed on Apr 27, 2026 (Monday) by Guest Customer for GBP 531.38 (~$674.85 USD). Product: EverydayCarry Crossbody Bag - Men's, a compact crossbody bag with anti-theft zipper. Support inquiry (Refund request): Customer requested a refund for order #1039 due to change of mind; refund processed within policy window.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6720951395781",
+        "customer_id": null,
+        "category": "Bags & Accessories",
+        "order_month": "2026-04",
+        "currency": "GBP",
+        "has_review": false,
+        "has_support_ticket": true,
+        "rating": null
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6789365813777",
+      "order_name": "#1038",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-04-28T11:39:50Z",
+        "amount": "4919.51",
+        "currency": "EUR",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 5362.27,
+        "order_month": "2026-04",
+        "order_weekday": "Tuesday",
+        "is_guest_checkout": true,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "GlowFresh Vitamin C Serum",
+          "category": "Beauty & Personal Care",
+          "description": "Brightening facial serum with 15% vitamin C and hyaluronic acid."
+        },
+        "review": {
+          "rating": 4,
+          "text": "Really happy with this purchase, exactly as described."
+        },
+        "support_ticket": {
+          "subject": "Refund request",
+          "text": "Customer requested a refund for order #1038 due to change of mind; refund processed within policy window."
+        }
+      },
+      "rag_document": "Order #1038 placed on Apr 28, 2026 (Tuesday) by Guest Customer for EUR 4919.51 (~$5362.27 USD). Product: GlowFresh Vitamin C Serum, a brightening facial serum with 15% vitamin c and hyaluronic acid. Customer review (4/5 stars): Really happy with this purchase, exactly as described. Support inquiry (Refund request): Customer requested a refund for order #1038 due to change of mind; refund processed within policy window.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6789365813777",
+        "customer_id": null,
+        "category": "Beauty & Personal Care",
+        "order_month": "2026-04",
+        "currency": "EUR",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 4
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6755654928546",
+      "order_name": "#1077",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-05-02T03:39:08Z",
+        "amount": "3391.58",
+        "currency": "EUR",
+        "customer_name": "Emma Smith",
+        "customer_email": "emma.smith851@example.com"
+      },
+      "derived": {
+        "amount_usd": 3696.82,
+        "order_month": "2026-05",
+        "order_weekday": "Saturday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "FlexFit Yoga Leggings - Unisex",
+          "category": "Apparel",
+          "description": "High-waisted stretch leggings with moisture-wicking fabric."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Excellent build quality, this has become a daily essential."
+        },
+        "support_ticket": {
+          "subject": "General order status check",
+          "text": "Customer asked for an update on order #1077; confirmed shipped with tracking number provided."
+        }
+      },
+      "rag_document": "Order #1077 placed on May 02, 2026 (Saturday) by Emma Smith for EUR 3391.58 (~$3696.82 USD). Product: FlexFit Yoga Leggings - Unisex, a high-waisted stretch leggings with moisture-wicking fabric. Customer review (5/5 stars): Excellent build quality, this has become a daily essential. Support inquiry (General order status check): Customer asked for an update on order #1077; confirmed shipped with tracking number provided.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6755654928546",
+        "customer_id": "gid://shopify/Customer/7758457285044",
+        "category": "Apparel",
+        "order_month": "2026-05",
+        "currency": "EUR",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6790756431141",
+      "order_name": "#1035",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-05-03T00:24:21Z",
+        "amount": "1339.09",
+        "currency": "USD",
+        "customer_name": "Fatima Brown",
+        "customer_email": "fatima.brown959@example.com"
+      },
+      "derived": {
+        "amount_usd": 1339.09,
+        "order_month": "2026-05",
+        "order_weekday": "Sunday",
+        "is_guest_checkout": false,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "ChopEase Knife Set - Women's",
+          "category": "Home & Kitchen",
+          "description": "5-piece kitchen knife set with ergonomic handles and storage block."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Really happy with this purchase, exactly as described."
+        },
+        "support_ticket": null
+      },
+      "rag_document": "Order #1035 placed on May 03, 2026 (Sunday) by Fatima Brown for USD 1339.09 (~$1339.09 USD). Product: ChopEase Knife Set - Women's, a 5-piece kitchen knife set with ergonomic handles and storage block. Customer review (5/5 stars): Really happy with this purchase, exactly as described.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6790756431141",
+        "customer_id": "gid://shopify/Customer/7828623824187",
+        "category": "Home & Kitchen",
+        "order_month": "2026-05",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": false,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6789827297893",
+      "order_name": "#1011",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-05-03T05:00:37Z",
+        "amount": "3282.36",
+        "currency": "USD",
+        "customer_name": "Ahmed Malik",
+        "customer_email": "ahmed.malik575@example.com"
+      },
+      "derived": {
+        "amount_usd": 3282.36,
+        "order_month": "2026-05",
+        "order_weekday": "Sunday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "ClassicFit Denim Jeans - Men's",
+          "category": "Apparel",
+          "description": "Straight-leg denim jean with reinforced stitching."
+        },
+        "review": {
+          "rating": 4,
+          "text": "Excellent build quality, this has become a daily essential."
+        },
+        "support_ticket": null
+      },
+      "rag_document": "Order #1011 placed on May 03, 2026 (Sunday) by Ahmed Malik for USD 3282.36 (~$3282.36 USD). Product: ClassicFit Denim Jeans - Men's, a straight-leg denim jean with reinforced stitching. Customer review (4/5 stars): Excellent build quality, this has become a daily essential.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6789827297893",
+        "customer_id": "gid://shopify/Customer/7817103043320",
+        "category": "Apparel",
+        "order_month": "2026-05",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": false,
+        "rating": 4
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6719561052667",
+      "order_name": "#1055",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-05-07T16:14:42Z",
+        "amount": "3490.58",
+        "currency": "CAD",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 2583.03,
+        "order_month": "2026-05",
+        "order_weekday": "Thursday",
+        "is_guest_checkout": true,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "PureClay Face Mask - Unisex",
+          "category": "Beauty & Personal Care",
+          "description": "Detoxifying clay mask for oily and combination skin."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Excellent build quality, this has become a daily essential."
+        },
+        "support_ticket": {
+          "subject": "Wrong size received",
+          "text": "Customer reported receiving the wrong size for order #1055; replacement was issued."
+        }
+      },
+      "rag_document": "Order #1055 placed on May 07, 2026 (Thursday) by Guest Customer for CAD 3490.58 (~$2583.03 USD). Product: PureClay Face Mask - Unisex, a detoxifying clay mask for oily and combination skin. Customer review (5/5 stars): Excellent build quality, this has become a daily essential. Support inquiry (Wrong size received): Customer reported receiving the wrong size for order #1055; replacement was issued.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6719561052667",
+        "customer_id": null,
+        "category": "Beauty & Personal Care",
+        "order_month": "2026-05",
+        "currency": "CAD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6716527099795",
+      "order_name": "#1054",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-05-09T05:41:14Z",
+        "amount": "1579.87",
+        "currency": "EUR",
+        "customer_name": "Ahmed Ahmed",
+        "customer_email": "ahmed.ahmed419@example.com"
+      },
+      "derived": {
+        "amount_usd": 1722.06,
+        "order_month": "2026-05",
+        "order_weekday": "Saturday",
+        "is_guest_checkout": false,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "SilkSmooth Hair Dryer",
+          "category": "Beauty & Personal Care",
+          "description": "Ionic hair dryer with ceramic technology to reduce frizz."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Exceeded my expectations, arrived quickly and works perfectly."
+        },
+        "support_ticket": {
+          "subject": "General order status check",
+          "text": "Customer asked for an update on order #1054; confirmed shipped with tracking number provided."
+        }
+      },
+      "rag_document": "Order #1054 placed on May 09, 2026 (Saturday) by Ahmed Ahmed for EUR 1579.87 (~$1722.06 USD). Product: SilkSmooth Hair Dryer, a ionic hair dryer with ceramic technology to reduce frizz. Customer review (5/5 stars): Exceeded my expectations, arrived quickly and works perfectly. Support inquiry (General order status check): Customer asked for an update on order #1054; confirmed shipped with tracking number provided.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6716527099795",
+        "customer_id": "gid://shopify/Customer/7731472807830",
+        "category": "Beauty & Personal Care",
+        "order_month": "2026-05",
+        "currency": "EUR",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6733546912874",
+      "order_name": "#1047",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-05-10T00:11:34Z",
+        "amount": "4014.14",
+        "currency": "CAD",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 2970.46,
+        "order_month": "2026-05",
+        "order_weekday": "Sunday",
+        "is_guest_checkout": true,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "FlexGrip Yoga Mat - Women's",
+          "category": "Outdoor & Sports",
+          "description": "Non-slip 6mm yoga mat with carrying strap."
+        },
+        "review": {
+          "rating": 4,
+          "text": "Exceeded my expectations, arrived quickly and works perfectly."
+        },
+        "support_ticket": null
+      },
+      "rag_document": "Order #1047 placed on May 10, 2026 (Sunday) by Guest Customer for CAD 4014.14 (~$2970.46 USD). Product: FlexGrip Yoga Mat - Women's, a non-slip 6mm yoga mat with carrying strap. Customer review (4/5 stars): Exceeded my expectations, arrived quickly and works perfectly.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6733546912874",
+        "customer_id": null,
+        "category": "Outdoor & Sports",
+        "order_month": "2026-05",
+        "currency": "CAD",
+        "has_review": true,
+        "has_support_ticket": false,
+        "rating": 4
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6733290884804",
+      "order_name": "#1059",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-05-11T04:10:51Z",
+        "amount": "4094.84",
+        "currency": "USD",
+        "customer_name": "Emma Johnson",
+        "customer_email": "emma.johnson48@example.com"
+      },
+      "derived": {
+        "amount_usd": 4094.84,
+        "order_month": "2026-05",
+        "order_weekday": "Monday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "ClearView Phone Case",
+          "category": "Electronics Accessories",
+          "description": "Shock-absorbent clear phone case with reinforced corners."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Fast shipping and the product feels premium for the cost."
+        },
+        "support_ticket": {
+          "subject": "Wrong size received",
+          "text": "Customer reported receiving the wrong size for order #1059; replacement was issued."
+        }
+      },
+      "rag_document": "Order #1059 placed on May 11, 2026 (Monday) by Emma Johnson for USD 4094.84 (~$4094.84 USD). Product: ClearView Phone Case, a shock-absorbent clear phone case with reinforced corners. Customer review (5/5 stars): Fast shipping and the product feels premium for the cost. Support inquiry (Wrong size received): Customer reported receiving the wrong size for order #1059; replacement was issued.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6733290884804",
+        "customer_id": "gid://shopify/Customer/7026402684235",
+        "category": "Electronics Accessories",
+        "order_month": "2026-05",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6775687017337",
+      "order_name": "#1070",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-05-11T12:57:15Z",
+        "amount": "3400.52",
+        "currency": "GBP",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 4318.66,
+        "order_month": "2026-05",
+        "order_weekday": "Monday",
+        "is_guest_checkout": true,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "GlowFresh Vitamin C Serum - Unisex",
+          "category": "Beauty & Personal Care",
+          "description": "Brightening facial serum with 15% vitamin C and hyaluronic acid."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Great quality for the price, would buy again."
+        },
+        "support_ticket": {
+          "subject": "Product defect report",
+          "text": "Customer reported a defect with the item in order #1070; replacement unit shipped free of charge."
+        }
+      },
+      "rag_document": "Order #1070 placed on May 11, 2026 (Monday) by Guest Customer for GBP 3400.52 (~$4318.66 USD). Product: GlowFresh Vitamin C Serum - Unisex, a brightening facial serum with 15% vitamin c and hyaluronic acid. Customer review (5/5 stars): Great quality for the price, would buy again. Support inquiry (Product defect report): Customer reported a defect with the item in order #1070; replacement unit shipped free of charge.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6775687017337",
+        "customer_id": null,
+        "category": "Beauty & Personal Care",
+        "order_month": "2026-05",
+        "currency": "GBP",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6790426976678",
+      "order_name": "#1025",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-05-18T14:17:33Z",
+        "amount": "2064.34",
+        "currency": "CAD",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 1527.61,
+        "order_month": "2026-05",
+        "order_weekday": "Monday",
+        "is_guest_checkout": true,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "FlexFit Yoga Leggings - Women's",
+          "category": "Apparel",
+          "description": "High-waisted stretch leggings with moisture-wicking fabric."
+        },
+        "review": {
+          "rating": 2,
+          "text": "Item didn't match the product photos, quite underwhelming."
+        },
+        "support_ticket": null
+      },
+      "rag_document": "Order #1025 placed on May 18, 2026 (Monday) by Guest Customer for CAD 2064.34 (~$1527.61 USD). Product: FlexFit Yoga Leggings - Women's, a high-waisted stretch leggings with moisture-wicking fabric. Customer review (2/5 stars): Item didn't match the product photos, quite underwhelming.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6790426976678",
+        "customer_id": null,
+        "category": "Apparel",
+        "order_month": "2026-05",
+        "currency": "CAD",
+        "has_review": true,
+        "has_support_ticket": false,
+        "rating": 2
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6785385324134",
+      "order_name": "#1083",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-05-18T19:12:30Z",
+        "amount": "1711.59",
+        "currency": "USD",
+        "customer_name": "Ahmed Ahmed",
+        "customer_email": "ahmed.ahmed971@example.com"
+      },
+      "derived": {
+        "amount_usd": 1711.59,
+        "order_month": "2026-05",
+        "order_weekday": "Monday",
+        "is_guest_checkout": false,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "TravelLite Packing Cubes - Women's",
+          "category": "Bags & Accessories",
+          "description": "Set of 4 compression packing cubes for organized travel."
+        },
+        "review": null,
+        "support_ticket": {
+          "subject": "Delayed delivery inquiry",
+          "text": "Customer asked why order #1083 hadn't shipped after 5 days; resolved after tracking update was shared."
+        }
+      },
+      "rag_document": "Order #1083 placed on May 18, 2026 (Monday) by Ahmed Ahmed for USD 1711.59 (~$1711.59 USD). Product: TravelLite Packing Cubes - Women's, a set of 4 compression packing cubes for organized travel. Support inquiry (Delayed delivery inquiry): Customer asked why order #1083 hadn't shipped after 5 days; resolved after tracking update was shared.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6785385324134",
+        "customer_id": "gid://shopify/Customer/7566979281770",
+        "category": "Bags & Accessories",
+        "order_month": "2026-05",
+        "currency": "USD",
+        "has_review": false,
+        "has_support_ticket": true,
+        "rating": null
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6708928193543",
+      "order_name": "#1018",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-05-21T23:13:33Z",
+        "amount": "1208.67",
+        "currency": "USD",
+        "customer_name": "Sara Ahmed",
+        "customer_email": "sara.ahmed132@example.com"
+      },
+      "derived": {
+        "amount_usd": 1208.67,
+        "order_month": "2026-05",
+        "order_weekday": "Thursday",
+        "is_guest_checkout": false,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "BrewMaster Pour-Over Kettle - Women's",
+          "category": "Home & Kitchen",
+          "description": "Gooseneck stainless steel kettle for precision pour-over coffee."
+        },
+        "review": null,
+        "support_ticket": {
+          "subject": "Delayed delivery inquiry",
+          "text": "Customer asked why order #1018 hadn't shipped after 5 days; resolved after tracking update was shared."
+        }
+      },
+      "rag_document": "Order #1018 placed on May 21, 2026 (Thursday) by Sara Ahmed for USD 1208.67 (~$1208.67 USD). Product: BrewMaster Pour-Over Kettle - Women's, a gooseneck stainless steel kettle for precision pour-over coffee. Support inquiry (Delayed delivery inquiry): Customer asked why order #1018 hadn't shipped after 5 days; resolved after tracking update was shared.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6708928193543",
+        "customer_id": "gid://shopify/Customer/7140728187316",
+        "category": "Home & Kitchen",
+        "order_month": "2026-05",
+        "currency": "USD",
+        "has_review": false,
+        "has_support_ticket": true,
+        "rating": null
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6791096585068",
+      "order_name": "#1045",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-05-22T14:47:54Z",
+        "amount": "4496.14",
+        "currency": "USD",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 4496.14,
+        "order_month": "2026-05",
+        "order_weekday": "Friday",
+        "is_guest_checkout": true,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "PowerCore 10000 Power Bank - Men's",
+          "category": "Electronics Accessories",
+          "description": "Compact 10000mAh power bank with dual USB-C fast charging."
+        },
+        "review": {
+          "rating": 1,
+          "text": "Poor stitching quality, would not recommend."
+        },
+        "support_ticket": null
+      },
+      "rag_document": "Order #1045 placed on May 22, 2026 (Friday) by Guest Customer for USD 4496.14 (~$4496.14 USD). Product: PowerCore 10000 Power Bank - Men's, a compact 10000mah power bank with dual usb-c fast charging. Customer review (1/5 stars): Poor stitching quality, would not recommend.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6791096585068",
+        "customer_id": null,
+        "category": "Electronics Accessories",
+        "order_month": "2026-05",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": false,
+        "rating": 1
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6791094139054",
+      "order_name": "#1008",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-05-22T16:28:56Z",
+        "amount": "1860.35",
+        "currency": "USD",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 1860.35,
+        "order_month": "2026-05",
+        "order_weekday": "Friday",
+        "is_guest_checkout": true,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "EverydayCarry Crossbody Bag - Women's",
+          "category": "Bags & Accessories",
+          "description": "Compact crossbody bag with anti-theft zipper."
+        },
+        "review": {
+          "rating": 2,
+          "text": "Poor stitching quality, would not recommend."
+        },
+        "support_ticket": {
+          "subject": "Wrong size received",
+          "text": "Customer reported receiving the wrong size for order #1008; replacement was issued."
+        }
+      },
+      "rag_document": "Order #1008 placed on May 22, 2026 (Friday) by Guest Customer for USD 1860.35 (~$1860.35 USD). Product: EverydayCarry Crossbody Bag - Women's, a compact crossbody bag with anti-theft zipper. Customer review (2/5 stars): Poor stitching quality, would not recommend. Support inquiry (Wrong size received): Customer reported receiving the wrong size for order #1008; replacement was issued.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6791094139054",
+        "customer_id": null,
+        "category": "Bags & Accessories",
+        "order_month": "2026-05",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 2
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6719025789079",
+      "order_name": "#1044",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-05-24T09:20:32Z",
+        "amount": "2769.34",
+        "currency": "EUR",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 3018.58,
+        "order_month": "2026-05",
+        "order_weekday": "Sunday",
+        "is_guest_checkout": true,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "PureClay Face Mask - Women's",
+          "category": "Beauty & Personal Care",
+          "description": "Detoxifying clay mask for oily and combination skin."
+        },
+        "review": {
+          "rating": 4,
+          "text": "Really happy with this purchase, exactly as described."
+        },
+        "support_ticket": null
+      },
+      "rag_document": "Order #1044 placed on May 24, 2026 (Sunday) by Guest Customer for EUR 2769.34 (~$3018.58 USD). Product: PureClay Face Mask - Women's, a detoxifying clay mask for oily and combination skin. Customer review (4/5 stars): Really happy with this purchase, exactly as described.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6719025789079",
+        "customer_id": null,
+        "category": "Beauty & Personal Care",
+        "order_month": "2026-05",
+        "currency": "EUR",
+        "has_review": true,
+        "has_support_ticket": false,
+        "rating": 4
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6701465576748",
+      "order_name": "#1079",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-05-24T21:58:15Z",
+        "amount": "2537.21",
+        "currency": "USD",
+        "customer_name": "Fatima Smith",
+        "customer_email": "fatima.smith913@example.com"
+      },
+      "derived": {
+        "amount_usd": 2537.21,
+        "order_month": "2026-05",
+        "order_weekday": "Sunday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "GlowFresh Vitamin C Serum - Men's",
+          "category": "Beauty & Personal Care",
+          "description": "Brightening facial serum with 15% vitamin C and hyaluronic acid."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Fast shipping and the product feels premium for the cost."
+        },
+        "support_ticket": {
+          "subject": "Wrong size received",
+          "text": "Customer reported receiving the wrong size for order #1079; replacement was issued."
+        }
+      },
+      "rag_document": "Order #1079 placed on May 24, 2026 (Sunday) by Fatima Smith for USD 2537.21 (~$2537.21 USD). Product: GlowFresh Vitamin C Serum - Men's, a brightening facial serum with 15% vitamin c and hyaluronic acid. Customer review (5/5 stars): Fast shipping and the product feels premium for the cost. Support inquiry (Wrong size received): Customer reported receiving the wrong size for order #1079; replacement was issued.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6701465576748",
+        "customer_id": "gid://shopify/Customer/7697340287725",
+        "category": "Beauty & Personal Care",
+        "order_month": "2026-05",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6714824020111",
+      "order_name": "#1020",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-05-26T00:31:52Z",
+        "amount": "4499.58",
+        "currency": "CAD",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 3329.69,
+        "order_month": "2026-05",
+        "order_weekday": "Tuesday",
+        "is_guest_checkout": true,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "EverydayCarry Crossbody Bag - Unisex",
+          "category": "Bags & Accessories",
+          "description": "Compact crossbody bag with anti-theft zipper."
+        },
+        "review": {
+          "rating": 3,
+          "text": "Good product overall but sizing/fit ran differently than expected."
+        },
+        "support_ticket": {
+          "subject": "Refund request",
+          "text": "Customer requested a refund for order #1020 due to change of mind; refund processed within policy window."
+        }
+      },
+      "rag_document": "Order #1020 placed on May 26, 2026 (Tuesday) by Guest Customer for CAD 4499.58 (~$3329.69 USD). Product: EverydayCarry Crossbody Bag - Unisex, a compact crossbody bag with anti-theft zipper. Customer review (3/5 stars): Good product overall but sizing/fit ran differently than expected. Support inquiry (Refund request): Customer requested a refund for order #1020 due to change of mind; refund processed within policy window.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6714824020111",
+        "customer_id": null,
+        "category": "Bags & Accessories",
+        "order_month": "2026-05",
+        "currency": "CAD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 3
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6789461611826",
+      "order_name": "#1006",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-05-28T00:11:46Z",
+        "amount": "2766.92",
+        "currency": "USD",
+        "customer_name": "Maria Taylor",
+        "customer_email": "maria.taylor72@example.com"
+      },
+      "derived": {
+        "amount_usd": 2766.92,
+        "order_month": "2026-05",
+        "order_weekday": "Thursday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "PuzzleMaster 1000pc",
+          "category": "Toys & Games",
+          "description": "1000-piece landscape jigsaw puzzle."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Excellent build quality, this has become a daily essential."
+        },
+        "support_ticket": {
+          "subject": "General order status check",
+          "text": "Customer asked for an update on order #1006; confirmed shipped with tracking number provided."
+        }
+      },
+      "rag_document": "Order #1006 placed on May 28, 2026 (Thursday) by Maria Taylor for USD 2766.92 (~$2766.92 USD). Product: PuzzleMaster 1000pc, a 1000-piece landscape jigsaw puzzle. Customer review (5/5 stars): Excellent build quality, this has become a daily essential. Support inquiry (General order status check): Customer asked for an update on order #1006; confirmed shipped with tracking number provided.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6789461611826",
+        "customer_id": "gid://shopify/Customer/7773919986476",
+        "category": "Toys & Games",
+        "order_month": "2026-05",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6744353465017",
+      "order_name": "#1072",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-05-28T05:30:14Z",
+        "amount": "1070.13",
+        "currency": "USD",
+        "customer_name": "David Raza",
+        "customer_email": "david.raza259@example.com"
+      },
+      "derived": {
+        "amount_usd": 1070.13,
+        "order_month": "2026-05",
+        "order_weekday": "Thursday",
+        "is_guest_checkout": false,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "ComfortStep Slip-Ons - Women's",
+          "category": "Footwear",
+          "description": "Casual slip-on shoe with memory foam insole for all-day comfort."
+        },
+        "review": {
+          "rating": 4,
+          "text": "Really happy with this purchase, exactly as described."
+        },
+        "support_ticket": {
+          "subject": "Product defect report",
+          "text": "Customer reported a defect with the item in order #1072; replacement unit shipped free of charge."
+        }
+      },
+      "rag_document": "Order #1072 placed on May 28, 2026 (Thursday) by David Raza for USD 1070.13 (~$1070.13 USD). Product: ComfortStep Slip-Ons - Women's, a casual slip-on shoe with memory foam insole for all-day comfort. Customer review (4/5 stars): Really happy with this purchase, exactly as described. Support inquiry (Product defect report): Customer reported a defect with the item in order #1072; replacement unit shipped free of charge.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6744353465017",
+        "customer_id": "gid://shopify/Customer/7463134588274",
+        "category": "Footwear",
+        "order_month": "2026-05",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 4
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6782351820356",
+      "order_name": "#1056",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-05-28T05:53:24Z",
+        "amount": "3744.45",
+        "currency": "GBP",
+        "customer_name": "David Ahmed",
+        "customer_email": "david.ahmed312@example.com"
+      },
+      "derived": {
+        "amount_usd": 4755.45,
+        "order_month": "2026-05",
+        "order_weekday": "Thursday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "ChopEase Knife Set - Unisex",
+          "category": "Home & Kitchen",
+          "description": "5-piece kitchen knife set with ergonomic handles and storage block."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Excellent build quality, this has become a daily essential."
+        },
+        "support_ticket": {
+          "subject": "Refund request",
+          "text": "Customer requested a refund for order #1056 due to change of mind; refund processed within policy window."
+        }
+      },
+      "rag_document": "Order #1056 placed on May 28, 2026 (Thursday) by David Ahmed for GBP 3744.45 (~$4755.45 USD). Product: ChopEase Knife Set - Unisex, a 5-piece kitchen knife set with ergonomic handles and storage block. Customer review (5/5 stars): Excellent build quality, this has become a daily essential. Support inquiry (Refund request): Customer requested a refund for order #1056 due to change of mind; refund processed within policy window.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6782351820356",
+        "customer_id": "gid://shopify/Customer/7003580822352",
+        "category": "Home & Kitchen",
+        "order_month": "2026-05",
+        "currency": "GBP",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6740165498236",
+      "order_name": "#1068",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-05-28T17:24:29Z",
+        "amount": "44.39",
+        "currency": "CAD",
+        "customer_name": "David Ahmed",
+        "customer_email": "david.ahmed560@example.com"
+      },
+      "derived": {
+        "amount_usd": 32.85,
+        "order_month": "2026-05",
+        "order_weekday": "Thursday",
+        "is_guest_checkout": false,
+        "order_value_tier": "low"
+      },
+      "synthetic": {
+        "product": {
+          "name": "EverydayCarry Crossbody Bag - Unisex",
+          "category": "Bags & Accessories",
+          "description": "Compact crossbody bag with anti-theft zipper."
+        },
+        "review": null,
+        "support_ticket": {
+          "subject": "General order status check",
+          "text": "Customer asked for an update on order #1068; confirmed shipped with tracking number provided."
+        }
+      },
+      "rag_document": "Order #1068 placed on May 28, 2026 (Thursday) by David Ahmed for CAD 44.39 (~$32.85 USD). Product: EverydayCarry Crossbody Bag - Unisex, a compact crossbody bag with anti-theft zipper. Support inquiry (General order status check): Customer asked for an update on order #1068; confirmed shipped with tracking number provided.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6740165498236",
+        "customer_id": "gid://shopify/Customer/7810664407007",
+        "category": "Bags & Accessories",
+        "order_month": "2026-05",
+        "currency": "CAD",
+        "has_review": false,
+        "has_support_ticket": true,
+        "rating": null
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6708706337023",
+      "order_name": "#1071",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-06-03T00:32:05Z",
+        "amount": "2828.49",
+        "currency": "EUR",
+        "customer_name": "John Wilson",
+        "customer_email": "john.wilson267@example.com"
+      },
+      "derived": {
+        "amount_usd": 3083.05,
+        "order_month": "2026-06",
+        "order_weekday": "Wednesday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "EverydayCarry Crossbody Bag",
+          "category": "Bags & Accessories",
+          "description": "Compact crossbody bag with anti-theft zipper."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Excellent build quality, this has become a daily essential."
+        },
+        "support_ticket": {
+          "subject": "Product defect report",
+          "text": "Customer reported a defect with the item in order #1071; replacement unit shipped free of charge."
+        }
+      },
+      "rag_document": "Order #1071 placed on Jun 03, 2026 (Wednesday) by John Wilson for EUR 2828.49 (~$3083.05 USD). Product: EverydayCarry Crossbody Bag, a compact crossbody bag with anti-theft zipper. Customer review (5/5 stars): Excellent build quality, this has become a daily essential. Support inquiry (Product defect report): Customer reported a defect with the item in order #1071; replacement unit shipped free of charge.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6708706337023",
+        "customer_id": "gid://shopify/Customer/7052320127777",
+        "category": "Bags & Accessories",
+        "order_month": "2026-06",
+        "currency": "EUR",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6792897761932",
+      "order_name": "#1092",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-06-05T14:51:50Z",
+        "amount": "384.30",
+        "currency": "CAD",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 284.38,
+        "order_month": "2026-06",
+        "order_weekday": "Friday",
+        "is_guest_checkout": true,
+        "order_value_tier": "low"
+      },
+      "synthetic": {
+        "product": {
+          "name": "UrbanTrail Hiking Boots - Women's",
+          "category": "Footwear",
+          "description": "Waterproof hiking boot with reinforced toe cap and grippy rubber outsole."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Excellent build quality, this has become a daily essential."
+        },
+        "support_ticket": {
+          "subject": "Product defect report",
+          "text": "Customer reported a defect with the item in order #1092; replacement unit shipped free of charge."
+        }
+      },
+      "rag_document": "Order #1092 placed on Jun 05, 2026 (Friday) by Guest Customer for CAD 384.30 (~$284.38 USD). Product: UrbanTrail Hiking Boots - Women's, a waterproof hiking boot with reinforced toe cap and grippy rubber outsole. Customer review (5/5 stars): Excellent build quality, this has become a daily essential. Support inquiry (Product defect report): Customer reported a defect with the item in order #1092; replacement unit shipped free of charge.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6792897761932",
+        "customer_id": null,
+        "category": "Footwear",
+        "order_month": "2026-06",
+        "currency": "CAD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6740672964393",
+      "order_name": "#1097",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-06-08T15:39:35Z",
+        "amount": "3451.52",
+        "currency": "CAD",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 2554.12,
+        "order_month": "2026-06",
+        "order_weekday": "Monday",
+        "is_guest_checkout": true,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "TravelLite Packing Cubes",
+          "category": "Bags & Accessories",
+          "description": "Set of 4 compression packing cubes for organized travel."
+        },
+        "review": {
+          "rating": 4,
+          "text": "Fast shipping and the product feels premium for the cost."
+        },
+        "support_ticket": {
+          "subject": "Refund request",
+          "text": "Customer requested a refund for order #1097 due to change of mind; refund processed within policy window."
+        }
+      },
+      "rag_document": "Order #1097 placed on Jun 08, 2026 (Monday) by Guest Customer for CAD 3451.52 (~$2554.12 USD). Product: TravelLite Packing Cubes, a set of 4 compression packing cubes for organized travel. Customer review (4/5 stars): Fast shipping and the product feels premium for the cost. Support inquiry (Refund request): Customer requested a refund for order #1097 due to change of mind; refund processed within policy window.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6740672964393",
+        "customer_id": null,
+        "category": "Bags & Accessories",
+        "order_month": "2026-06",
+        "currency": "CAD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 4
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6786461212064",
+      "order_name": "#1042",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-06-14T12:00:44Z",
+        "amount": "234.77",
+        "currency": "USD",
+        "customer_name": "John Wilson",
+        "customer_email": "john.wilson438@example.com"
+      },
+      "derived": {
+        "amount_usd": 234.77,
+        "order_month": "2026-06",
+        "order_weekday": "Sunday",
+        "is_guest_checkout": false,
+        "order_value_tier": "low"
+      },
+      "synthetic": {
+        "product": {
+          "name": "ClassicFit Denim Jeans",
+          "category": "Apparel",
+          "description": "Straight-leg denim jean with reinforced stitching."
+        },
+        "review": {
+          "rating": 3,
+          "text": "Works well but packaging arrived slightly damaged."
+        },
+        "support_ticket": {
+          "subject": "Delayed delivery inquiry",
+          "text": "Customer asked why order #1042 hadn't shipped after 6 days; resolved after tracking update was shared."
+        }
+      },
+      "rag_document": "Order #1042 placed on Jun 14, 2026 (Sunday) by John Wilson for USD 234.77 (~$234.77 USD). Product: ClassicFit Denim Jeans, a straight-leg denim jean with reinforced stitching. Customer review (3/5 stars): Works well but packaging arrived slightly damaged. Support inquiry (Delayed delivery inquiry): Customer asked why order #1042 hadn't shipped after 6 days; resolved after tracking update was shared.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6786461212064",
+        "customer_id": "gid://shopify/Customer/7775463562649",
+        "category": "Apparel",
+        "order_month": "2026-06",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 3
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6781863065808",
+      "order_name": "#1095",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-06-16T12:59:01Z",
+        "amount": "2849.62",
+        "currency": "USD",
+        "customer_name": "Sara Johnson",
+        "customer_email": "sara.johnson271@example.com"
+      },
+      "derived": {
+        "amount_usd": 2849.62,
+        "order_month": "2026-06",
+        "order_weekday": "Tuesday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "SoundWave Bluetooth Earbuds - Unisex",
+          "category": "Electronics Accessories",
+          "description": "Wireless earbuds with 24-hour battery life and noise isolation."
+        },
+        "review": {
+          "rating": 4,
+          "text": "Great quality for the price, would buy again."
+        },
+        "support_ticket": {
+          "subject": "Wrong size received",
+          "text": "Customer reported receiving the wrong size for order #1095; replacement was issued."
+        }
+      },
+      "rag_document": "Order #1095 placed on Jun 16, 2026 (Tuesday) by Sara Johnson for USD 2849.62 (~$2849.62 USD). Product: SoundWave Bluetooth Earbuds - Unisex, a wireless earbuds with 24-hour battery life and noise isolation. Customer review (4/5 stars): Great quality for the price, would buy again. Support inquiry (Wrong size received): Customer reported receiving the wrong size for order #1095; replacement was issued.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6781863065808",
+        "customer_id": "gid://shopify/Customer/7234614800586",
+        "category": "Electronics Accessories",
+        "order_month": "2026-06",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 4
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6752491356860",
+      "order_name": "#1085",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-06-24T01:17:22Z",
+        "amount": "478.87",
+        "currency": "USD",
+        "customer_name": "Ahmed Taylor",
+        "customer_email": "ahmed.taylor567@example.com"
+      },
+      "derived": {
+        "amount_usd": 478.87,
+        "order_month": "2026-06",
+        "order_weekday": "Wednesday",
+        "is_guest_checkout": false,
+        "order_value_tier": "low"
+      },
+      "synthetic": {
+        "product": {
+          "name": "SilkSmooth Hair Dryer - Unisex",
+          "category": "Beauty & Personal Care",
+          "description": "Ionic hair dryer with ceramic technology to reduce frizz."
+        },
+        "review": null,
+        "support_ticket": {
+          "subject": "Wrong size received",
+          "text": "Customer reported receiving the wrong size for order #1085; replacement was issued."
+        }
+      },
+      "rag_document": "Order #1085 placed on Jun 24, 2026 (Wednesday) by Ahmed Taylor for USD 478.87 (~$478.87 USD). Product: SilkSmooth Hair Dryer - Unisex, a ionic hair dryer with ceramic technology to reduce frizz. Support inquiry (Wrong size received): Customer reported receiving the wrong size for order #1085; replacement was issued.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6752491356860",
+        "customer_id": "gid://shopify/Customer/7521275973591",
+        "category": "Beauty & Personal Care",
+        "order_month": "2026-06",
+        "currency": "USD",
+        "has_review": false,
+        "has_support_ticket": true,
+        "rating": null
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6799540750281",
+      "order_name": "#1080",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-06-28T13:04:52Z",
+        "amount": "777.66",
+        "currency": "GBP",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 987.63,
+        "order_month": "2026-06",
+        "order_weekday": "Sunday",
+        "is_guest_checkout": true,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "ClassicFit Denim Jeans",
+          "category": "Apparel",
+          "description": "Straight-leg denim jean with reinforced stitching."
+        },
+        "review": {
+          "rating": 1,
+          "text": "Item didn't match the product photos, quite underwhelming."
+        },
+        "support_ticket": {
+          "subject": "Product defect report",
+          "text": "Customer reported a defect with the item in order #1080; replacement unit shipped free of charge."
+        }
+      },
+      "rag_document": "Order #1080 placed on Jun 28, 2026 (Sunday) by Guest Customer for GBP 777.66 (~$987.63 USD). Product: ClassicFit Denim Jeans, a straight-leg denim jean with reinforced stitching. Customer review (1/5 stars): Item didn't match the product photos, quite underwhelming. Support inquiry (Product defect report): Customer reported a defect with the item in order #1080; replacement unit shipped free of charge.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6799540750281",
+        "customer_id": null,
+        "category": "Apparel",
+        "order_month": "2026-06",
+        "currency": "GBP",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 1
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6731042286266",
+      "order_name": "#1049",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-06-28T18:20:13Z",
+        "amount": "1536.38",
+        "currency": "USD",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 1536.38,
+        "order_month": "2026-06",
+        "order_weekday": "Sunday",
+        "is_guest_checkout": true,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "BrewMaster Pour-Over Kettle - Unisex",
+          "category": "Home & Kitchen",
+          "description": "Gooseneck stainless steel kettle for precision pour-over coffee."
+        },
+        "review": null,
+        "support_ticket": {
+          "subject": "General order status check",
+          "text": "Customer asked for an update on order #1049; confirmed shipped with tracking number provided."
+        }
+      },
+      "rag_document": "Order #1049 placed on Jun 28, 2026 (Sunday) by Guest Customer for USD 1536.38 (~$1536.38 USD). Product: BrewMaster Pour-Over Kettle - Unisex, a gooseneck stainless steel kettle for precision pour-over coffee. Support inquiry (General order status check): Customer asked for an update on order #1049; confirmed shipped with tracking number provided.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6731042286266",
+        "customer_id": null,
+        "category": "Home & Kitchen",
+        "order_month": "2026-06",
+        "currency": "USD",
+        "has_review": false,
+        "has_support_ticket": true,
+        "rating": null
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6758439875878",
+      "order_name": "#1019",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-07-04T13:57:10Z",
+        "amount": "838.16",
+        "currency": "EUR",
+        "customer_name": "Michael Johnson",
+        "customer_email": "michael.johnson409@example.com"
+      },
+      "derived": {
+        "amount_usd": 913.59,
+        "order_month": "2026-07",
+        "order_weekday": "Saturday",
+        "is_guest_checkout": false,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "UrbanTrail Hiking Boots - Women's",
+          "category": "Footwear",
+          "description": "Waterproof hiking boot with reinforced toe cap and grippy rubber outsole."
+        },
+        "review": {
+          "rating": 3,
+          "text": "Good product overall but sizing/fit ran differently than expected."
+        },
+        "support_ticket": {
+          "subject": "Refund request",
+          "text": "Customer requested a refund for order #1019 due to change of mind; refund processed within policy window."
+        }
+      },
+      "rag_document": "Order #1019 placed on Jul 04, 2026 (Saturday) by Michael Johnson for EUR 838.16 (~$913.59 USD). Product: UrbanTrail Hiking Boots - Women's, a waterproof hiking boot with reinforced toe cap and grippy rubber outsole. Customer review (3/5 stars): Good product overall but sizing/fit ran differently than expected. Support inquiry (Refund request): Customer requested a refund for order #1019 due to change of mind; refund processed within policy window.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6758439875878",
+        "customer_id": "gid://shopify/Customer/7342364508902",
+        "category": "Footwear",
+        "order_month": "2026-07",
+        "currency": "EUR",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 3
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6708170929908",
+      "order_name": "#1029",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-07-06T22:35:08Z",
+        "amount": "4325.28",
+        "currency": "USD",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 4325.28,
+        "order_month": "2026-07",
+        "order_weekday": "Monday",
+        "is_guest_checkout": true,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "TravelLite Packing Cubes",
+          "category": "Bags & Accessories",
+          "description": "Set of 4 compression packing cubes for organized travel."
+        },
+        "review": {
+          "rating": 4,
+          "text": "Really happy with this purchase, exactly as described."
+        },
+        "support_ticket": {
+          "subject": "Product defect report",
+          "text": "Customer reported a defect with the item in order #1029; replacement unit shipped free of charge."
+        }
+      },
+      "rag_document": "Order #1029 placed on Jul 06, 2026 (Monday) by Guest Customer for USD 4325.28 (~$4325.28 USD). Product: TravelLite Packing Cubes, a set of 4 compression packing cubes for organized travel. Customer review (4/5 stars): Really happy with this purchase, exactly as described. Support inquiry (Product defect report): Customer reported a defect with the item in order #1029; replacement unit shipped free of charge.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6708170929908",
+        "customer_id": null,
+        "category": "Bags & Accessories",
+        "order_month": "2026-07",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 4
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6762482634267",
+      "order_name": "#1064",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-07-16T00:52:24Z",
+        "amount": "4155.39",
+        "currency": "CAD",
+        "customer_name": "Fatima Wilson",
+        "customer_email": "fatima.wilson254@example.com"
+      },
+      "derived": {
+        "amount_usd": 3074.99,
+        "order_month": "2026-07",
+        "order_weekday": "Thursday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "PowerCore 10000 Power Bank - Unisex",
+          "category": "Electronics Accessories",
+          "description": "Compact 10000mAh power bank with dual USB-C fast charging."
+        },
+        "review": {
+          "rating": 3,
+          "text": "Decent quality, though I expected slightly better durability."
+        },
+        "support_ticket": {
+          "subject": "General order status check",
+          "text": "Customer asked for an update on order #1064; confirmed shipped with tracking number provided."
+        }
+      },
+      "rag_document": "Order #1064 placed on Jul 16, 2026 (Thursday) by Fatima Wilson for CAD 4155.39 (~$3074.99 USD). Product: PowerCore 10000 Power Bank - Unisex, a compact 10000mah power bank with dual usb-c fast charging. Customer review (3/5 stars): Decent quality, though I expected slightly better durability. Support inquiry (General order status check): Customer asked for an update on order #1064; confirmed shipped with tracking number provided.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6762482634267",
+        "customer_id": "gid://shopify/Customer/7825746940063",
+        "category": "Electronics Accessories",
+        "order_month": "2026-07",
+        "currency": "CAD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 3
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6795343281705",
+      "order_name": "#1003",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-07-16T06:15:09Z",
+        "amount": "147.28",
+        "currency": "EUR",
+        "customer_name": "Michael Iqbal",
+        "customer_email": "michael.iqbal604@example.com"
+      },
+      "derived": {
+        "amount_usd": 160.54,
+        "order_month": "2026-07",
+        "order_weekday": "Thursday",
+        "is_guest_checkout": false,
+        "order_value_tier": "low"
+      },
+      "synthetic": {
+        "product": {
+          "name": "PuzzleMaster 1000pc - Men's",
+          "category": "Toys & Games",
+          "description": "1000-piece landscape jigsaw puzzle."
+        },
+        "review": null,
+        "support_ticket": {
+          "subject": "Delayed delivery inquiry",
+          "text": "Customer asked why order #1003 hadn't shipped after 4 days; resolved after tracking update was shared."
+        }
+      },
+      "rag_document": "Order #1003 placed on Jul 16, 2026 (Thursday) by Michael Iqbal for EUR 147.28 (~$160.54 USD). Product: PuzzleMaster 1000pc - Men's, a 1000-piece landscape jigsaw puzzle. Support inquiry (Delayed delivery inquiry): Customer asked why order #1003 hadn't shipped after 4 days; resolved after tracking update was shared.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6795343281705",
+        "customer_id": "gid://shopify/Customer/7490573056992",
+        "category": "Toys & Games",
+        "order_month": "2026-07",
+        "currency": "EUR",
+        "has_review": false,
+        "has_support_ticket": true,
+        "rating": null
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6724635766833",
+      "order_name": "#1058",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-07-18T12:29:13Z",
+        "amount": "3971.77",
+        "currency": "CAD",
+        "customer_name": "Ahmed Ahmed",
+        "customer_email": "ahmed.ahmed635@example.com"
+      },
+      "derived": {
+        "amount_usd": 2939.11,
+        "order_month": "2026-07",
+        "order_weekday": "Saturday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "BuildBlocks Creative Set - Women's",
+          "category": "Toys & Games",
+          "description": "500-piece building block set for imaginative play."
+        },
+        "review": {
+          "rating": 4,
+          "text": "Excellent build quality, this has become a daily essential."
+        },
+        "support_ticket": {
+          "subject": "Product defect report",
+          "text": "Customer reported a defect with the item in order #1058; replacement unit shipped free of charge."
+        }
+      },
+      "rag_document": "Order #1058 placed on Jul 18, 2026 (Saturday) by Ahmed Ahmed for CAD 3971.77 (~$2939.11 USD). Product: BuildBlocks Creative Set - Women's, a 500-piece building block set for imaginative play. Customer review (4/5 stars): Excellent build quality, this has become a daily essential. Support inquiry (Product defect report): Customer reported a defect with the item in order #1058; replacement unit shipped free of charge.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6724635766833",
+        "customer_id": "gid://shopify/Customer/7698635932470",
+        "category": "Toys & Games",
+        "order_month": "2026-07",
+        "currency": "CAD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 4
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6702098545541",
+      "order_name": "#1017",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-07-25T23:15:16Z",
+        "amount": "3000.74",
+        "currency": "USD",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 3000.74,
+        "order_month": "2026-07",
+        "order_weekday": "Saturday",
+        "is_guest_checkout": true,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "PowerCore 10000 Power Bank - Unisex",
+          "category": "Electronics Accessories",
+          "description": "Compact 10000mAh power bank with dual USB-C fast charging."
+        },
+        "review": {
+          "rating": 4,
+          "text": "Really happy with this purchase, exactly as described."
+        },
+        "support_ticket": {
+          "subject": "General order status check",
+          "text": "Customer asked for an update on order #1017; confirmed shipped with tracking number provided."
+        }
+      },
+      "rag_document": "Order #1017 placed on Jul 25, 2026 (Saturday) by Guest Customer for USD 3000.74 (~$3000.74 USD). Product: PowerCore 10000 Power Bank - Unisex, a compact 10000mah power bank with dual usb-c fast charging. Customer review (4/5 stars): Really happy with this purchase, exactly as described. Support inquiry (General order status check): Customer asked for an update on order #1017; confirmed shipped with tracking number provided.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6702098545541",
+        "customer_id": null,
+        "category": "Electronics Accessories",
+        "order_month": "2026-07",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 4
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6776218212326",
+      "order_name": "#1086",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-07-26T04:33:03Z",
+        "amount": "2136.14",
+        "currency": "USD",
+        "customer_name": "Fatima Raza",
+        "customer_email": "fatima.raza237@example.com"
+      },
+      "derived": {
+        "amount_usd": 2136.14,
+        "order_month": "2026-07",
+        "order_weekday": "Sunday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "PureClay Face Mask",
+          "category": "Beauty & Personal Care",
+          "description": "Detoxifying clay mask for oily and combination skin."
+        },
+        "review": {
+          "rating": 4,
+          "text": "Exceeded my expectations, arrived quickly and works perfectly."
+        },
+        "support_ticket": null
+      },
+      "rag_document": "Order #1086 placed on Jul 26, 2026 (Sunday) by Fatima Raza for USD 2136.14 (~$2136.14 USD). Product: PureClay Face Mask, a detoxifying clay mask for oily and combination skin. Customer review (4/5 stars): Exceeded my expectations, arrived quickly and works perfectly.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6776218212326",
+        "customer_id": "gid://shopify/Customer/7276194842663",
+        "category": "Beauty & Personal Care",
+        "order_month": "2026-07",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": false,
+        "rating": 4
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6710771041378",
+      "order_name": "#1032",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-07-26T06:27:15Z",
+        "amount": "298.54",
+        "currency": "USD",
+        "customer_name": "Sara Taylor",
+        "customer_email": "sara.taylor883@example.com"
+      },
+      "derived": {
+        "amount_usd": 298.54,
+        "order_month": "2026-07",
+        "order_weekday": "Sunday",
+        "is_guest_checkout": false,
+        "order_value_tier": "low"
+      },
+      "synthetic": {
+        "product": {
+          "name": "TravelLite Packing Cubes - Unisex",
+          "category": "Bags & Accessories",
+          "description": "Set of 4 compression packing cubes for organized travel."
+        },
+        "review": {
+          "rating": 3,
+          "text": "Does the job but customer support was slow to respond initially."
+        },
+        "support_ticket": {
+          "subject": "Delayed delivery inquiry",
+          "text": "Customer asked why order #1032 hadn't shipped after 2 days; resolved after tracking update was shared."
+        }
+      },
+      "rag_document": "Order #1032 placed on Jul 26, 2026 (Sunday) by Sara Taylor for USD 298.54 (~$298.54 USD). Product: TravelLite Packing Cubes - Unisex, a set of 4 compression packing cubes for organized travel. Customer review (3/5 stars): Does the job but customer support was slow to respond initially. Support inquiry (Delayed delivery inquiry): Customer asked why order #1032 hadn't shipped after 2 days; resolved after tracking update was shared.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6710771041378",
+        "customer_id": "gid://shopify/Customer/7739026264592",
+        "category": "Bags & Accessories",
+        "order_month": "2026-07",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 3
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6738527577250",
+      "order_name": "#1051",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-07-28T05:53:34Z",
+        "amount": "4697.10",
+        "currency": "USD",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 4697.1,
+        "order_month": "2026-07",
+        "order_weekday": "Tuesday",
+        "is_guest_checkout": true,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "GlowFresh Vitamin C Serum - Women's",
+          "category": "Beauty & Personal Care",
+          "description": "Brightening facial serum with 15% vitamin C and hyaluronic acid."
+        },
+        "review": {
+          "rating": 3,
+          "text": "Decent quality, though I expected slightly better durability."
+        },
+        "support_ticket": {
+          "subject": "Refund request",
+          "text": "Customer requested a refund for order #1051 due to change of mind; refund processed within policy window."
+        }
+      },
+      "rag_document": "Order #1051 placed on Jul 28, 2026 (Tuesday) by Guest Customer for USD 4697.10 (~$4697.10 USD). Product: GlowFresh Vitamin C Serum - Women's, a brightening facial serum with 15% vitamin c and hyaluronic acid. Customer review (3/5 stars): Decent quality, though I expected slightly better durability. Support inquiry (Refund request): Customer requested a refund for order #1051 due to change of mind; refund processed within policy window.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6738527577250",
+        "customer_id": null,
+        "category": "Beauty & Personal Care",
+        "order_month": "2026-07",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 3
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6735147813494",
+      "order_name": "#1027",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-07-28T06:32:43Z",
+        "amount": "713.81",
+        "currency": "CAD",
+        "customer_name": "Sara Wilson",
+        "customer_email": "sara.wilson877@example.com"
+      },
+      "derived": {
+        "amount_usd": 528.22,
+        "order_month": "2026-07",
+        "order_weekday": "Tuesday",
+        "is_guest_checkout": false,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "FlexGrip Yoga Mat - Men's",
+          "category": "Outdoor & Sports",
+          "description": "Non-slip 6mm yoga mat with carrying strap."
+        },
+        "review": {
+          "rating": 4,
+          "text": "Excellent build quality, this has become a daily essential."
+        },
+        "support_ticket": {
+          "subject": "Refund request",
+          "text": "Customer requested a refund for order #1027 due to change of mind; refund processed within policy window."
+        }
+      },
+      "rag_document": "Order #1027 placed on Jul 28, 2026 (Tuesday) by Sara Wilson for CAD 713.81 (~$528.22 USD). Product: FlexGrip Yoga Mat - Men's, a non-slip 6mm yoga mat with carrying strap. Customer review (4/5 stars): Excellent build quality, this has become a daily essential. Support inquiry (Refund request): Customer requested a refund for order #1027 due to change of mind; refund processed within policy window.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6735147813494",
+        "customer_id": "gid://shopify/Customer/7948363234235",
+        "category": "Outdoor & Sports",
+        "order_month": "2026-07",
+        "currency": "CAD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 4
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6736904397480",
+      "order_name": "#1081",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-07-29T00:08:06Z",
+        "amount": "2332.40",
+        "currency": "CAD",
+        "customer_name": "Emma Smith",
+        "customer_email": "emma.smith462@example.com"
+      },
+      "derived": {
+        "amount_usd": 1725.98,
+        "order_month": "2026-07",
+        "order_weekday": "Wednesday",
+        "is_guest_checkout": false,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "ClassicFit Denim Jeans - Unisex",
+          "category": "Apparel",
+          "description": "Straight-leg denim jean with reinforced stitching."
+        },
+        "review": null,
+        "support_ticket": null
+      },
+      "rag_document": "Order #1081 placed on Jul 29, 2026 (Wednesday) by Emma Smith for CAD 2332.40 (~$1725.98 USD). Product: ClassicFit Denim Jeans - Unisex, a straight-leg denim jean with reinforced stitching.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6736904397480",
+        "customer_id": "gid://shopify/Customer/7967565629292",
+        "category": "Apparel",
+        "order_month": "2026-07",
+        "currency": "CAD",
+        "has_review": false,
+        "has_support_ticket": false,
+        "rating": null
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6754045862384",
+      "order_name": "#1012",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-07-29T07:37:56Z",
+        "amount": "3738.86",
+        "currency": "USD",
+        "customer_name": "John Ahmed",
+        "customer_email": "john.ahmed774@example.com"
+      },
+      "derived": {
+        "amount_usd": 3738.86,
+        "order_month": "2026-07",
+        "order_weekday": "Wednesday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "SoundWave Bluetooth Earbuds - Unisex",
+          "category": "Electronics Accessories",
+          "description": "Wireless earbuds with 24-hour battery life and noise isolation."
+        },
+        "review": {
+          "rating": 3,
+          "text": "Decent quality, though I expected slightly better durability."
+        },
+        "support_ticket": {
+          "subject": "General order status check",
+          "text": "Customer asked for an update on order #1012; confirmed shipped with tracking number provided."
+        }
+      },
+      "rag_document": "Order #1012 placed on Jul 29, 2026 (Wednesday) by John Ahmed for USD 3738.86 (~$3738.86 USD). Product: SoundWave Bluetooth Earbuds - Unisex, a wireless earbuds with 24-hour battery life and noise isolation. Customer review (3/5 stars): Decent quality, though I expected slightly better durability. Support inquiry (General order status check): Customer asked for an update on order #1012; confirmed shipped with tracking number provided.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6754045862384",
+        "customer_id": "gid://shopify/Customer/7100903882207",
+        "category": "Electronics Accessories",
+        "order_month": "2026-07",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 3
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6752532868056",
+      "order_name": "#1066",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-07-29T18:35:01Z",
+        "amount": "704.79",
+        "currency": "USD",
+        "customer_name": "Emma Smith",
+        "customer_email": "emma.smith339@example.com"
+      },
+      "derived": {
+        "amount_usd": 704.79,
+        "order_month": "2026-07",
+        "order_weekday": "Wednesday",
+        "is_guest_checkout": false,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "GlowFresh Vitamin C Serum - Unisex",
+          "category": "Beauty & Personal Care",
+          "description": "Brightening facial serum with 15% vitamin C and hyaluronic acid."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Really happy with this purchase, exactly as described."
+        },
+        "support_ticket": {
+          "subject": "Delayed delivery inquiry",
+          "text": "Customer asked why order #1066 hadn't shipped after 7 days; resolved after tracking update was shared."
+        }
+      },
+      "rag_document": "Order #1066 placed on Jul 29, 2026 (Wednesday) by Emma Smith for USD 704.79 (~$704.79 USD). Product: GlowFresh Vitamin C Serum - Unisex, a brightening facial serum with 15% vitamin c and hyaluronic acid. Customer review (5/5 stars): Really happy with this purchase, exactly as described. Support inquiry (Delayed delivery inquiry): Customer asked why order #1066 hadn't shipped after 7 days; resolved after tracking update was shared.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6752532868056",
+        "customer_id": "gid://shopify/Customer/7448458442836",
+        "category": "Beauty & Personal Care",
+        "order_month": "2026-07",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6753344110239",
+      "order_name": "#1067",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-07-30T17:30:08Z",
+        "amount": "2087.63",
+        "currency": "CAD",
+        "customer_name": "Ayesha Khan",
+        "customer_email": "ayesha.khan784@example.com"
+      },
+      "derived": {
+        "amount_usd": 1544.85,
+        "order_month": "2026-07",
+        "order_weekday": "Thursday",
+        "is_guest_checkout": false,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "PowerCore 10000 Power Bank",
+          "category": "Electronics Accessories",
+          "description": "Compact 10000mAh power bank with dual USB-C fast charging."
+        },
+        "review": {
+          "rating": 1,
+          "text": "Item didn't match the product photos, quite underwhelming."
+        },
+        "support_ticket": {
+          "subject": "Wrong size received",
+          "text": "Customer reported receiving the wrong size for order #1067; replacement was issued."
+        }
+      },
+      "rag_document": "Order #1067 placed on Jul 30, 2026 (Thursday) by Ayesha Khan for CAD 2087.63 (~$1544.85 USD). Product: PowerCore 10000 Power Bank, a compact 10000mah power bank with dual usb-c fast charging. Customer review (1/5 stars): Item didn't match the product photos, quite underwhelming. Support inquiry (Wrong size received): Customer reported receiving the wrong size for order #1067; replacement was issued.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6753344110239",
+        "customer_id": "gid://shopify/Customer/7970047277656",
+        "category": "Electronics Accessories",
+        "order_month": "2026-07",
+        "currency": "CAD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 1
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6777306329557",
+      "order_name": "#1028",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-08-02T17:24:13Z",
+        "amount": "267.18",
+        "currency": "USD",
+        "customer_name": "Sara Johnson",
+        "customer_email": "sara.johnson498@example.com"
+      },
+      "derived": {
+        "amount_usd": 267.18,
+        "order_month": "2026-08",
+        "order_weekday": "Sunday",
+        "is_guest_checkout": false,
+        "order_value_tier": "low"
+      },
+      "synthetic": {
+        "product": {
+          "name": "BuildBlocks Creative Set",
+          "category": "Toys & Games",
+          "description": "500-piece building block set for imaginative play."
+        },
+        "review": {
+          "rating": 4,
+          "text": "Excellent build quality, this has become a daily essential."
+        },
+        "support_ticket": {
+          "subject": "Refund request",
+          "text": "Customer requested a refund for order #1028 due to change of mind; refund processed within policy window."
+        }
+      },
+      "rag_document": "Order #1028 placed on Aug 02, 2026 (Sunday) by Sara Johnson for USD 267.18 (~$267.18 USD). Product: BuildBlocks Creative Set, a 500-piece building block set for imaginative play. Customer review (4/5 stars): Excellent build quality, this has become a daily essential. Support inquiry (Refund request): Customer requested a refund for order #1028 due to change of mind; refund processed within policy window.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6777306329557",
+        "customer_id": "gid://shopify/Customer/7447390899554",
+        "category": "Toys & Games",
+        "order_month": "2026-08",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 4
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6790686309195",
+      "order_name": "#1014",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-08-03T20:26:20Z",
+        "amount": "3406.21",
+        "currency": "USD",
+        "customer_name": "Ahmed Brown",
+        "customer_email": "ahmed.brown446@example.com"
+      },
+      "derived": {
+        "amount_usd": 3406.21,
+        "order_month": "2026-08",
+        "order_weekday": "Monday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "UrbanTrail Hiking Boots - Women's",
+          "category": "Footwear",
+          "description": "Waterproof hiking boot with reinforced toe cap and grippy rubber outsole."
+        },
+        "review": {
+          "rating": 5,
+          "text": "Great quality for the price, would buy again."
+        },
+        "support_ticket": {
+          "subject": "Delayed delivery inquiry",
+          "text": "Customer asked why order #1014 hadn't shipped after 6 days; resolved after tracking update was shared."
+        }
+      },
+      "rag_document": "Order #1014 placed on Aug 03, 2026 (Monday) by Ahmed Brown for USD 3406.21 (~$3406.21 USD). Product: UrbanTrail Hiking Boots - Women's, a waterproof hiking boot with reinforced toe cap and grippy rubber outsole. Customer review (5/5 stars): Great quality for the price, would buy again. Support inquiry (Delayed delivery inquiry): Customer asked why order #1014 hadn't shipped after 6 days; resolved after tracking update was shared.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6790686309195",
+        "customer_id": "gid://shopify/Customer/7322601660137",
+        "category": "Footwear",
+        "order_month": "2026-08",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 5
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6773654627323",
+      "order_name": "#1043",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-08-06T20:01:51Z",
+        "amount": "572.69",
+        "currency": "USD",
+        "customer_name": null,
+        "customer_email": null
+      },
+      "derived": {
+        "amount_usd": 572.69,
+        "order_month": "2026-08",
+        "order_weekday": "Thursday",
+        "is_guest_checkout": true,
+        "order_value_tier": "medium"
+      },
+      "synthetic": {
+        "product": {
+          "name": "AeroFlex Running Shoes - Unisex",
+          "category": "Footwear",
+          "description": "Lightweight performance running shoe with breathable mesh upper and responsive foam midsole."
+        },
+        "review": {
+          "rating": 2,
+          "text": "Arrived late and the item had a manufacturing defect."
+        },
+        "support_ticket": {
+          "subject": "Wrong size received",
+          "text": "Customer reported receiving the wrong size for order #1043; replacement was issued."
+        }
+      },
+      "rag_document": "Order #1043 placed on Aug 06, 2026 (Thursday) by Guest Customer for USD 572.69 (~$572.69 USD). Product: AeroFlex Running Shoes - Unisex, a lightweight performance running shoe with breathable mesh upper and responsive foam midsole. Customer review (2/5 stars): Arrived late and the item had a manufacturing defect. Support inquiry (Wrong size received): Customer reported receiving the wrong size for order #1043; replacement was issued.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6773654627323",
+        "customer_id": null,
+        "category": "Footwear",
+        "order_month": "2026-08",
+        "currency": "USD",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 2
+      }
+    },
+    {
+      "order_id": "gid://shopify/Order/6767794424223",
+      "order_name": "#1024",
+      "tenant_id": "shop_demo_001",
+      "original": {
+        "created_at": "2026-08-10T18:30:26Z",
+        "amount": "2371.27",
+        "currency": "EUR",
+        "customer_name": "Emma Smith",
+        "customer_email": "emma.smith442@example.com"
+      },
+      "derived": {
+        "amount_usd": 2584.68,
+        "order_month": "2026-08",
+        "order_weekday": "Monday",
+        "is_guest_checkout": false,
+        "order_value_tier": "high"
+      },
+      "synthetic": {
+        "product": {
+          "name": "EverydayCarry Crossbody Bag - Unisex",
+          "category": "Bags & Accessories",
+          "description": "Compact crossbody bag with anti-theft zipper."
+        },
+        "review": {
+          "rating": 3,
+          "text": "Does the job but customer support was slow to respond initially."
+        },
+        "support_ticket": {
+          "subject": "Product defect report",
+          "text": "Customer reported a defect with the item in order #1024; replacement unit shipped free of charge."
+        }
+      },
+      "rag_document": "Order #1024 placed on Aug 10, 2026 (Monday) by Emma Smith for EUR 2371.27 (~$2584.68 USD). Product: EverydayCarry Crossbody Bag - Unisex, a compact crossbody bag with anti-theft zipper. Customer review (3/5 stars): Does the job but customer support was slow to respond initially. Support inquiry (Product defect report): Customer reported a defect with the item in order #1024; replacement unit shipped free of charge.",
+      "metadata": {
+        "tenant_id": "shop_demo_001",
+        "order_id": "gid://shopify/Order/6767794424223",
+        "customer_id": "gid://shopify/Customer/7721970820395",
+        "category": "Bags & Accessories",
+        "order_month": "2026-08",
+        "currency": "EUR",
+        "has_review": true,
+        "has_support_ticket": true,
+        "rating": 3
+      }
+    }
+  ]
+}

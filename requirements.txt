@@ -4,3 +4,4 @@ sqlalchemy
 chromadb
 python-dotenv
 requests
+pytest

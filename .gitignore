@@ -4,3 +4,13 @@ venv/
 .env
 *.db
 .DS_Store
+# Chroma local vector database
+chroma_data/
+
+# SQLite backup
+insighterz_etl.db.backup
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
